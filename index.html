@@ -516,6 +516,11 @@ let totalTools=0;
 toolCategories.forEach(c=>totalTools+=c.tools.length);
 document.getElementById('toolCount').textContent=totalTools+'+';
 
+/* ========== URL HELPER — strips .html so links show clean paths ========== */
+function cleanUrl(slug){
+    return '/'+slug.replace(/\.html$/i,'');
+}
+
 /* ========== RENDER TOOLS ========== */
 function renderTools(filter=''){
     const container=document.getElementById('toolsContainer');
@@ -534,7 +539,7 @@ function renderTools(filter=''){
         html+=`<div class="category-title" style="--cat-color:${cat.color}"><span class="category-dot" style="--cat-color:${cat.color};background:${cat.color};box-shadow:0 0 12px ${cat.color}"></span>${cat.name}<span class="category-count">${filtered.length} tool${filtered.length>1?'s':''}</span></div>`;
         html+=`<div class="tools-grid">`;
         filtered.forEach(t=>{
-            const url='/'+t.slug;
+            const url=cleanUrl(t.slug);
             html+=`<div class="tool-card-3d"><a href="${url}" class="tool-card" style="--cat-color:${cat.color}" title="${t.name}"><div class="tool-icon" style="background:${cat.bg};color:${cat.color}"><span class="iconify" data-icon="${t.icon}" data-width="22"></span></div><div class="tool-info"><h3>${t.name}</h3><p>${t.desc}</p></div><span class="tool-arrow iconify" data-icon="lucide:arrow-right" data-width="16"></span><div class="card-depth"></div></a></div>`;
         });
         html+=`</div>`;
@@ -566,7 +571,7 @@ document.getElementById('toolSearch').addEventListener('input',function(e){
     toolCategories.forEach(cat=>{
         html+=`<div class="footer-tool-group"><h5><span class="ft-dot" style="background:${cat.color};color:${cat.color}"></span>${cat.name}</h5><ul>`;
         cat.tools.slice(0,5).forEach(t=>{
-            const url='/'+t.slug;
+            const url=cleanUrl(t.slug);
             html+=`<li><a href="${url}">${t.name}<span class="ft-arrow iconify" data-icon="lucide:chevron-right" data-width="12"></span></a></li>`;
         });
         if(cat.tools.length>5){
@@ -734,7 +739,7 @@ function generateAIResponse(query){
     if(results.length<=3){
         reply=`I found <strong>${results.length} tool${results.length>1?'s':''}</strong> for you:<br><br>`;
         results.forEach(r=>{
-            const url='/'+r.tool.slug;
+            const url=cleanUrl(r.tool.slug);
             reply+=`• <a href="${url}" class="tool-link">${r.tool.name}</a> — ${r.tool.desc}<br>`;
         });
     }else{
@@ -748,7 +753,7 @@ function generateAIResponse(query){
         for(const[name,g] of Object.entries(grouped)){
             reply+=`<strong>${name}:</strong><br>`;
             g.tools.forEach(t=>{
-                const url='/'+t.slug;
+                const url=cleanUrl(t.slug);
                 reply+=`• <a href="${url}" class="tool-link">${t.name}</a><br>`;
             });
             reply+=`<br>`;
