@@ -1,775 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="mDp7CvRoOZF6vBAKwU6o0FWcOhrOIcT1m5yNuMsZsIQ" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ToolGalaxy.online – 100+ free online tools including PDF tools, image tools, calculators, converters, SEO tools, developer tools, generators, and more. No signup required.">
-    <meta name="keywords" content="online tools, free tools, ToolGalaxy, PDF merger, PDF compressor, image compressor, password generator, QR code generator, word counter, age calculator, BMI calculator, currency converter, JSON formatter, SEO tools, developer tools">
-    <meta name="author" content="ToolGalaxy.online">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://toolgalaxy.online/">
+    <meta name="description" content="ToolGalaxy – 300+ Free AI Tools for Writing, Marketing, Business, Social Media, Career & More.">
+    <meta name="keywords" content="AI tools, AI writer, AI marketing, AI business tools, AI social media, AI career tools, AI prompt library, ToolGalaxy, free AI tools">
+    <meta name="author" content="ToolGalaxy">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ToolGalaxy – 300+ Free AI Tools">
+    <meta property="og:description" content="Discover 300+ free AI tools for writing, marketing, business, social media, career & prompts.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="ToolGalaxy.online – 100+ Free Online Tools">
-    <meta property="og:description" content="Free online tools for PDF, images, calculators, converters, SEO, development, and more. No signup, no limits.">
-    <meta property="og:url" content="https://toolgalaxy.online/">
-    <meta property="og:site_name" content="ToolGalaxy.online">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e">
+    <meta property="og:url" content="https://toolgalaxy.online">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ToolGalaxy.online – 100+ Free Online Tools">
-    <meta name="twitter:description" content="Free online tools for PDF, images, calculators, converters, SEO, development, and more.">
-    <meta name="twitter:image" content="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e">
-    <title>ToolGalaxy.online – 100+ Free Online Tools | PDF, Image, SEO, Calculators</title>
-    <link rel="icon" type="image/png" href="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3Q1ERHE36"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-X3Q1ERHE36');
+    <meta name="theme-color" content="#0f1129">
+    <link rel="canonical" href="https://toolgalaxy.online">
+    <title>ToolGalaxy – 300+ Free AI Tools | AI Agent Powered</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ToolGalaxy",
+        "url": "https://toolgalaxy.online",
+        "description": "300+ Free AI Tools for Writing, Marketing, Business, Social Media, Career & More",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://toolgalaxy.online/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
     </script>
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { 'inter': ['Inter', 'sans-serif'] },
+                    colors: {
+                        galaxy: { 900:'#060818',800:'#0a0e1a',700:'#0f1129',600:'#151838',500:'#1e2148',400:'#2a2d5e',300:'#4a4d80' },
+                        nebula: { purple:'#8b5cf6',blue:'#6366f1',pink:'#c084fc',cyan:'#22d3ee',rose:'#f472b6' }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-        :root{
-            --blue:#DBEAFE;--blue-soft:#EFF6FF;--blue-mid:#BFDBFE;--blue-accent:#3B82F6;--blue-dark:#1D4ED8;
-            --bg-primary:#EBF5FF;--bg-white:#FFFFFF;--bg-soft:#F0F7FF;--bg-card:rgba(255,255,255,0.85);--bg-card-hover:rgba(255,255,255,0.95);
-            --text-primary:#0f172a;--text-secondary:#475569;--text-tertiary:#94a3b8;
-            --accent:#2563eb;--accent-bright:#3B82F6;--accent-soft:#DBEAFE;--accent-50:#BFDBFE;
-            --pink:#DB2777;--cyan:#0891B2;--green:#059669;--amber:#D97706;
-            --gradient:linear-gradient(135deg,#3B82F6,#1D4ED8);--gradient-warm:linear-gradient(135deg,#3B82F6,#8B5CF6);
-            --border:rgba(59,130,246,0.1);--border-strong:rgba(59,130,246,0.2);
-            --shadow-3d:0 20px 60px rgba(59,130,246,0.08),0 4px 16px rgba(0,0,0,0.04);
-            --shadow-card:0 1px 4px rgba(59,130,246,0.06),0 1px 2px rgba(0,0,0,0.04);
-            --shadow-hover:0 16px 48px rgba(59,130,246,0.12),0 4px 12px rgba(0,0,0,0.06);
-            --radius:16px;--radius-sm:12px;
-        }
-        html{scroll-behavior:smooth;perspective:1200px}
-        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-        .scene-3d{perspective:1200px;perspective-origin:50% 50%;transform-style:preserve-3d}
-        .floating-shapes{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;transform-style:preserve-3d;perspective:1000px;overflow:hidden}
-        .shape{position:absolute;background:rgba(59,130,246,0.04);border:1.5px solid rgba(59,130,246,0.06);border-radius:14px;transform-style:preserve-3d;animation:floatShape 22s infinite ease-in-out;box-shadow:0 4px 20px rgba(59,130,246,0.04)}
-        .shape:nth-child(1){width:90px;height:90px;top:8%;left:4%;animation-delay:0s;transform:rotateX(35deg) rotateY(45deg)}
-        .shape:nth-child(2){width:65px;height:65px;top:18%;right:8%;animation-delay:-3s;background:rgba(139,92,246,0.03);border-color:rgba(139,92,246,0.06);transform:rotateX(55deg) rotateZ(30deg)}
-        .shape:nth-child(3){width:110px;height:110px;top:45%;left:2%;animation-delay:-6s;border-color:rgba(8,145,178,0.05);transform:rotateY(60deg) rotateX(20deg)}
-        .shape:nth-child(4){width:55px;height:55px;top:65%;right:4%;animation-delay:-9s;transform:rotateZ(45deg) rotateX(30deg)}
-        .shape:nth-child(5){width:75px;height:75px;top:30%;left:48%;animation-delay:-12s;transform:rotateX(40deg) rotateY(70deg)}
-        .shape:nth-child(6){width:95px;height:95px;top:80%;left:38%;animation-delay:-15s;background:rgba(139,92,246,0.03);transform:rotateY(50deg) rotateZ(20deg)}
-        .shape:nth-child(7){width:45px;height:45px;top:4%;left:68%;animation-delay:-4s;border-color:rgba(8,145,178,0.05);border-radius:50%;transform:rotateX(60deg)}
-        .shape:nth-child(8){width:60px;height:60px;top:55%;right:22%;animation-delay:-8s;border-radius:50%;transform:rotateY(80deg) rotateX(25deg)}
-        @keyframes floatShape{0%,100%{transform:rotateX(35deg) rotateY(45deg) translateZ(0) translateY(0);opacity:0.6}25%{transform:rotateX(50deg) rotateY(70deg) translateZ(30px) translateY(-20px);opacity:0.9}50%{transform:rotateX(40deg) rotateY(100deg) translateZ(50px) translateY(-10px);opacity:0.7}75%{transform:rotateX(55deg) rotateY(130deg) translateZ(20px) translateY(-30px);opacity:1}}
-        .particles{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
-        .particle{position:absolute;border-radius:50%;animation:particleFloat linear infinite}
-        @keyframes particleFloat{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:0.5}85%{opacity:0.3}100%{transform:translateY(-10vh) scale(1);opacity:0}}
-        .grid-bg{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(59,130,246,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,0.03) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,black 0%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,black 0%,transparent 70%)}
-        .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.8);backdrop-filter:blur(24px) saturate(1.3);-webkit-backdrop-filter:blur(24px) saturate(1.3);border-bottom:1px solid var(--border);transition:all 0.4s;transform:translateZ(0)}
-        .header.scrolled{background:rgba(255,255,255,0.92);box-shadow:0 4px 24px rgba(59,130,246,0.06)}
-        .header-inner{max-width:1300px;margin:0 auto;padding:0 28px;height:76px;display:flex;align-items:center;justify-content:space-between;transform-style:preserve-3d}
-        .logo{display:flex;align-items:center;gap:14px;text-decoration:none;transform:translateZ(40px)}
-        .logo-img{height:52px;width:auto;object-fit:contain;transform:translateZ(20px);transition:transform 0.4s;filter:drop-shadow(0 2px 8px rgba(59,130,246,0.15))}
-        .logo:hover .logo-img{transform:translateZ(30px) rotateY(10deg) scale(1.05)}
-        .logo-text-wrap{display:flex;flex-direction:column;line-height:1.15}
-        .logo-name{font-size:20px;font-weight:900;color:var(--text-primary);letter-spacing:-0.03em}
-        .logo-name span{color:var(--accent)}
-        .logo-tagline{font-size:11px;font-weight:600;color:var(--text-tertiary);letter-spacing:0.04em}
-        .nav{display:flex;align-items:center;gap:4px;transform:translateZ(40px)}
-        .nav a{text-decoration:none;color:var(--text-secondary);font-size:14px;font-weight:500;padding:8px 18px;border-radius:50px;transition:all 0.3s;transform-style:preserve-3d;white-space:nowrap}
-        .nav a:hover{color:var(--accent);background:var(--accent-soft);transform:translateZ(10px)}
-        .nav a.active{color:var(--accent);background:var(--accent-soft);font-weight:600}
-        .nav-ai{display:flex;align-items:center;gap:7px;background:var(--gradient)!important;color:#fff!important;padding:10px 22px!important;border-radius:50px!important;font-weight:700!important;font-size:13px!important;box-shadow:0 3px 16px rgba(59,130,246,0.25);transform:translateZ(10px)!important;transition:all 0.3s!important}
-        .nav-ai:hover{transform:translateZ(20px) translateY(-2px)!important;box-shadow:0 6px 24px rgba(59,130,246,0.35)!important}
-        .mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;border-radius:var(--radius-sm);color:var(--text-primary)}
-        .mobile-toggle:hover{background:var(--accent-soft)}
-        .mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;bottom:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(24px);padding:24px;z-index:999;flex-direction:column;gap:4px;overflow-y:auto}
-        .mobile-menu.open{display:flex}
-        .mobile-menu a{text-decoration:none;color:var(--text-primary);font-size:16px;font-weight:500;padding:14px 18px;border-radius:var(--radius-sm);transition:all 0.2s}
-        .mobile-menu a:hover{background:var(--accent-soft);color:var(--accent)}
-        .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:120px 28px 80px;text-align:center;position:relative;z-index:1;transform-style:preserve-3d;background:linear-gradient(180deg,var(--bg-white) 0%,var(--bg-primary) 50%,var(--blue-soft) 100%)}
-        .hero-glow{position:absolute;top:10%;left:50%;transform:translateX(-50%) translateZ(-100px);width:900px;height:700px;background:radial-gradient(ellipse,rgba(59,130,246,0.08) 0%,rgba(139,92,246,0.04) 40%,transparent 70%);pointer-events:none;filter:blur(30px)}
-        .hero-glow-2{position:absolute;top:40%;left:20%;transform:translateZ(-80px);width:400px;height:400px;background:radial-gradient(circle,rgba(8,145,178,0.05) 0%,transparent 70%);pointer-events:none;filter:blur(20px)}
-        .hero-content{position:relative;z-index:2;transform-style:preserve-3d;transform:translateZ(60px)}
-        .hero-logo-wrap{display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:28px;animation:heroFloat 4s ease-in-out infinite}
-        @keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-        .hero-logo-img{height:90px;width:auto;filter:drop-shadow(0 8px 24px rgba(59,130,246,0.15))}
-        .hero-logo-name{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-0.03em;color:var(--text-primary)}
-        .hero-logo-name span{color:var(--accent)}
-        .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);border:1px solid var(--border-strong);color:var(--accent);font-size:13px;font-weight:700;padding:8px 20px;border-radius:50px;margin-bottom:28px;box-shadow:0 2px 12px rgba(59,130,246,0.06);animation:badgePulse 3s ease-in-out infinite}
-        @keyframes badgePulse{0%,100%{box-shadow:0 2px 12px rgba(59,130,246,0.06)}50%{box-shadow:0 4px 20px rgba(59,130,246,0.12)}}
-        .hero h1{font-size:clamp(30px,5.5vw,60px);font-weight:900;line-height:1.08;letter-spacing:-0.04em;margin-bottom:22px;max-width:900px;margin-left:auto;margin-right:auto}
-        .hero .gradient-text{background:linear-gradient(135deg,#3B82F6,#1D4ED8,#8B5CF6,#0891B2);background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradientShift 6s ease-in-out infinite}
-        @keyframes gradientShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
-        .hero p{font-size:18px;color:var(--text-secondary);max-width:580px;margin:0 auto 44px;line-height:1.7}
-        .search-box{max-width:600px;margin:0 auto 48px;position:relative;transform:translateZ(80px);transform-style:preserve-3d}
-        .search-box input{width:100%;padding:18px 24px 18px 56px;border:1.5px solid var(--border-strong);border-radius:16px;font-size:15px;font-family:inherit;background:var(--bg-white);color:var(--text-primary);outline:none;transition:all 0.4s;box-shadow:var(--shadow-3d);transform:translateZ(0);transform-style:preserve-3d}
-        .search-box input:focus{border-color:var(--accent);box-shadow:var(--shadow-3d),0 0 0 4px rgba(59,130,246,0.08);transform:translateZ(15px)}
-        .search-box input::placeholder{color:var(--text-tertiary)}
-        .search-box .search-icon{position:absolute;left:22px;top:50%;transform:translateY(-50%) translateZ(10px);color:var(--text-tertiary);pointer-events:none}
-        .hero-stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;transform:translateZ(100px)}
-        .hero-stat{text-align:center;transform-style:preserve-3d;transition:transform 0.4s}
-        .hero-stat:hover{transform:translateZ(20px) translateY(-5px)}
-        .hero-stat-num{font-size:32px;font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.02em}
-        .hero-stat-label{font-size:13px;color:var(--text-tertiary);font-weight:600;margin-top:4px}
-        .scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%) translateZ(40px);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--text-tertiary);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;animation:scrollBounce 2s ease-in-out infinite}
-        @keyframes scrollBounce{0%,100%{transform:translateX(-50%) translateZ(40px) translateY(0)}50%{transform:translateX(-50%) translateZ(40px) translateY(8px)}}
-        .tools-section{max-width:1300px;margin:0 auto;padding:40px 28px 100px;position:relative;z-index:1;transform-style:preserve-3d}
-        .section-header{text-align:center;margin-bottom:56px}
-        .section-header h2{font-size:clamp(26px,3.5vw,42px);font-weight:900;letter-spacing:-0.03em;margin-bottom:16px}
-        .section-header p{color:var(--text-secondary);font-size:16px;max-width:500px;margin:0 auto}
-        .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;transform-style:preserve-3d}
-        .tool-card-3d{perspective:800px}
-        .tool-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-decoration:none;color:inherit;display:flex;align-items:flex-start;gap:16px;cursor:pointer;position:relative;overflow:hidden;transform-style:preserve-3d;transition:transform 0.5s cubic-bezier(0.23,1,0.32,1),box-shadow 0.5s,border-color 0.4s;transform:translateZ(0);box-shadow:var(--shadow-card);backdrop-filter:blur(10px)}
-        .tool-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--cat-color,var(--accent));transform:scaleX(0);transform-origin:left;transition:transform 0.4s cubic-bezier(0.23,1,0.32,1);z-index:2}
-        .tool-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.8) 0%,transparent 50%);pointer-events:none}
-        .tool-card:hover{border-color:var(--cat-color,var(--border-strong));box-shadow:var(--shadow-hover);background:var(--bg-card-hover)}
-        .tool-card:hover::before{transform:scaleX(1)}
-        .tool-icon{width:48px;height:48px;min-width:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;transform:translateZ(15px);transition:all 0.4s}
-        .tool-card:hover .tool-icon{transform:translateZ(25px) scale(1.08);box-shadow:0 4px 16px rgba(59,130,246,0.1)}
-        .tool-info{flex:1;min-width:0;transform:translateZ(10px)}
-        .tool-info h3{font-size:14.5px;font-weight:700;margin-bottom:4px;letter-spacing:-0.01em;transition:color 0.3s;color:var(--text-primary)}
-        .tool-info p{font-size:12.5px;color:var(--text-tertiary);line-height:1.5}
-        .tool-card:hover .tool-info h3{color:var(--cat-color,var(--accent))}
-        .tool-arrow{color:var(--text-tertiary);transition:all 0.4s;margin-top:3px;opacity:0;transform:translateX(-8px) translateZ(10px)}
-        .tool-card:hover .tool-arrow{opacity:1;transform:translateX(0) translateZ(15px);color:var(--cat-color,var(--accent))}
-        .card-depth{position:absolute;bottom:-3px;left:10px;right:10px;height:4px;background:rgba(59,130,246,0.06);border-radius:0 0 12px 12px;filter:blur(4px);transform:translateZ(-5px)}
-        .category-title{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:800;margin:56px 0 24px;letter-spacing:-0.03em;color:var(--text-primary)}
-        .category-title:first-of-type{margin-top:0}
-        .category-dot{width:12px;height:12px;border-radius:50%;background:var(--cat-color,var(--accent));box-shadow:0 0 12px var(--cat-color,var(--accent));animation:dotPulse 3s ease-in-out infinite}
-        @keyframes dotPulse{0%,100%{box-shadow:0 0 12px var(--cat-color)}50%{box-shadow:0 0 20px var(--cat-color)}}
-        .category-count{font-size:11px;font-weight:700;color:var(--text-tertiary);background:var(--bg-soft);border:1px solid var(--border);padding:3px 12px;border-radius:50px}
-        .features{position:relative;z-index:1;padding:100px 28px;transform-style:preserve-3d;background:var(--bg-white)}
-        .features::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border-strong),transparent)}
-        .features::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--border-strong),transparent)}
-        .features-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;transform-style:preserve-3d}
-        .feature{text-align:center;padding:36px 24px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);backdrop-filter:blur(10px);transform:translateZ(0);transition:transform 0.5s cubic-bezier(0.23,1,0.32,1),box-shadow 0.5s;box-shadow:var(--shadow-card);position:relative;overflow:hidden}
-        .feature::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,var(--accent-soft) 0%,transparent 40%);pointer-events:none;opacity:0.5}
-        .feature:hover{transform:translateZ(30px) translateY(-8px);box-shadow:var(--shadow-hover);border-color:var(--border-strong)}
-        .feature-icon{width:64px;height:64px;margin:0 auto 20px;background:var(--accent-soft);border:1px solid var(--border-strong);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--accent);transition:all 0.4s;position:relative;z-index:1}
-        .feature:hover .feature-icon{transform:translateZ(10px) scale(1.05);box-shadow:0 4px 20px rgba(59,130,246,0.12)}
-        .feature h3{font-size:16px;font-weight:800;margin-bottom:10px;position:relative;z-index:1}
-        .feature p{font-size:14px;color:var(--text-secondary);line-height:1.7;position:relative;z-index:1}
-        .footer{background:#0f172a;color:rgba(255,255,255,0.6);position:relative;z-index:1}
-        .footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,0.3),transparent)}
-        .footer-inner{max-width:1300px;margin:0 auto;padding:0 28px}
-        .footer-brand-section{padding:56px 0 44px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
-        .footer-brand{max-width:500px}
-        .footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-        .footer-logo-img{height:40px;width:auto;object-fit:contain;filter:brightness(1.1) drop-shadow(0 2px 6px rgba(0,0,0,0.2))}
-        .footer-logo-text{font-size:18px;font-weight:800;color:#e0e8f4}
-        .footer-brand p{font-size:14px;line-height:1.7;color:rgba(255,255,255,0.35)}
-        .footer-tools-section{padding:44px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
-        .footer-tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0}
-        .footer-tool-group{padding:16px 0}
-        .footer-tool-group h5{font-size:11px;font-weight:800;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:8px}
-        .footer-tool-group h5 .ft-dot{width:7px;height:7px;border-radius:50%;display:inline-block;box-shadow:0 0 6px currentColor}
-        .footer-tool-group ul{list-style:none}
-        .footer-tool-group ul li{border-bottom:1px solid rgba(255,255,255,0.03)}
-        .footer-tool-group ul li:last-child{border-bottom:none}
-        .footer-tool-group ul li a{display:flex;align-items:center;gap:8px;text-decoration:none;color:rgba(255,255,255,0.35);font-size:13px;font-weight:500;padding:8px 0;transition:all 0.25s}
-        .footer-tool-group ul li a:hover{color:rgba(255,255,255,0.85);padding-left:8px}
-        .footer-tool-group ul li a .ft-arrow{opacity:0;transition:all 0.25s;font-size:11px}
-        .footer-tool-group ul li a:hover .ft-arrow{opacity:1}
-        .footer-legal-links{padding:36px 0;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;flex-wrap:wrap;gap:12px 32px}
-        .footer-legal-links a{text-decoration:none;color:rgba(255,255,255,0.5);font-size:14px;font-weight:600;transition:all 0.25s;display:flex;align-items:center;gap:8px}
-        .footer-legal-links a:hover{color:#fff;transform:translateX(4px)}
-        .footer-bottom{padding:28px 0;display:flex;justify-content:center;align-items:center;gap:16px}
-        .footer-bottom p{font-size:13px;color:rgba(255,255,255,0.25);font-weight:500}
-        .no-results{text-align:center;padding:60px 20px;display:none}
-        .no-results.show{display:block}
-        .no-results .iconify{font-size:52px;color:var(--text-tertiary);margin-bottom:18px}
-        .no-results h3{font-size:19px;font-weight:700;margin-bottom:8px}
-        .no-results p{color:var(--text-tertiary);font-size:14px}
-        .scroll-top{position:fixed;bottom:28px;right:28px;width:48px;height:48px;background:var(--gradient);color:#fff;border:none;border-radius:14px;cursor:pointer;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(59,130,246,0.3);opacity:0;transform:translateY(12px) rotateX(15deg);transition:all 0.4s cubic-bezier(0.23,1,0.32,1);z-index:100;font-family:'Inter',sans-serif}
-        .scroll-top.show{opacity:1;transform:translateY(0) rotateX(0deg)}
-        .scroll-top:hover{transform:translateY(-4px) rotateX(-5deg) scale(1.05);box-shadow:0 8px 30px rgba(59,130,246,0.4)}
-        .fade-up{opacity:0;transform:translateY(30px) translateZ(-20px);transition:opacity 0.8s ease,transform 0.8s ease}
-        .fade-up.visible{opacity:1;transform:translateY(0) translateZ(0)}
-        .ai-fab{position:fixed;bottom:28px;left:28px;z-index:999;width:60px;height:60px;border-radius:50%;background:var(--gradient);color:#fff;border:none;cursor:pointer;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(59,130,246,0.35),0 0 0 0 rgba(59,130,246,0.3);transition:all 0.3s;animation:fabPulse 3s ease-in-out infinite;font-family:'Inter',sans-serif}
-        .ai-fab:hover{transform:scale(1.08);box-shadow:0 6px 32px rgba(59,130,246,0.45)}
-        .ai-fab.open{animation:none}
-        .ai-fab.open:hover{transform:scale(1.08)}
-        @keyframes fabPulse{0%,100%{box-shadow:0 4px 24px rgba(59,130,246,0.35),0 0 0 0 rgba(59,130,246,0.3)}50%{box-shadow:0 4px 24px rgba(59,130,246,0.35),0 0 0 12px rgba(59,130,246,0)}}
-        .ai-chat{position:fixed;bottom:100px;left:28px;z-index:998;width:380px;max-height:540px;background:rgba(15,23,42,0.97);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.08);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,0.25);display:flex;flex-direction:column;overflow:hidden;transform:translateY(20px) scale(0.95);opacity:0;pointer-events:none;transition:all 0.35s cubic-bezier(0.23,1,0.32,1);transform-origin:bottom left}
-        .ai-chat.open{transform:translateY(0) scale(1);opacity:1;pointer-events:all}
-        .ai-chat-header{padding:18px 20px;background:rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:12px}
-        .ai-chat-avatar{width:36px;height:36px;border-radius:50%;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;flex-shrink:0;font-weight:800}
-        .ai-chat-header-info h4{font-size:14px;font-weight:700;color:#fff}
-        .ai-chat-header-info p{font-size:11px;color:rgba(255,255,255,0.35);font-weight:500}
-        .ai-chat-status{width:8px;height:8px;border-radius:50%;background:#34d399;margin-left:auto;box-shadow:0 0 8px rgba(52,211,153,0.5);animation:statusBlink 2s ease-in-out infinite}
-        @keyframes statusBlink{0%,100%{opacity:1}50%{opacity:0.5}}
-        .ai-chat-messages{flex:1;overflow-y:auto;padding:16px 18px;display:flex;flex-direction:column;gap:12px;min-height:300px;max-height:380px;scroll-behavior:smooth}
-        .ai-chat-messages::-webkit-scrollbar{width:4px}
-        .ai-chat-messages::-webkit-scrollbar-track{background:transparent}
-        .ai-chat-messages::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.12);border-radius:4px}
-        .msg{max-width:88%;padding:10px 14px;border-radius:14px;font-size:13px;line-height:1.6;word-wrap:break-word}
-        .msg.bot{background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.8);align-self:flex-start;border-bottom-left-radius:4px}
-        .msg.user{background:var(--gradient);color:#fff;align-self:flex-end;border-bottom-right-radius:4px;font-weight:500}
-        .msg.bot strong{color:#60a5fa}
-        .msg .tool-link{display:inline-block;color:#60a5fa;text-decoration:none;font-weight:600;border-bottom:1px dashed rgba(96,165,250,0.4);transition:all 0.2s}
-        .msg .tool-link:hover{border-bottom-color:#60a5fa}
-        .msg-typing{display:flex;gap:4px;padding:12px 16px;align-self:flex-start}
-        .msg-typing span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.25);animation:typingDot 1.2s ease-in-out infinite}
-        .msg-typing span:nth-child(2){animation-delay:0.15s}
-        .msg-typing span:nth-child(3){animation-delay:0.3s}
-        @keyframes typingDot{0%,60%,100%{transform:translateY(0);opacity:0.3}30%{transform:translateY(-6px);opacity:1}}
-        .ai-chat-input{padding:14px 16px;border-top:1px solid rgba(255,255,255,0.06);display:flex;gap:8px;align-items:center}
-        .ai-chat-input input{flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:10px 14px;font-size:13px;font-family:inherit;color:#fff;outline:none;transition:all 0.2s}
-        .ai-chat-input input:focus{border-color:rgba(59,130,246,0.4);background:rgba(255,255,255,0.1)}
-        .ai-chat-input input::placeholder{color:rgba(255,255,255,0.25)}
-        .ai-chat-send{width:38px;height:38px;border-radius:10px;background:var(--gradient);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:800;transition:all 0.2s;flex-shrink:0;font-family:'Inter',sans-serif}
-        .ai-chat-send:hover{transform:scale(1.05);box-shadow:0 2px 12px rgba(59,130,246,0.3)}
-        .ai-chat-send:disabled{opacity:0.4;cursor:not-allowed;transform:none}
-        .ai-quick-actions{padding:0 16px 12px;display:flex;flex-wrap:wrap;gap:6px}
-        .ai-quick-btn{padding:6px 12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);border-radius:8px;color:rgba(255,255,255,0.5);font-size:11px;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:inherit}
-        .ai-quick-btn:hover{background:rgba(59,130,246,0.15);border-color:rgba(59,130,246,0.25);color:#60a5fa}
-        @media(max-width:768px){
-            .nav{display:none}.mobile-toggle{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero-logo-wrap{flex-direction:column;gap:12px}.hero-logo-img{height:70px}.hero-stats{gap:28px}.tools-section{padding:30px 16px 60px}.tools-grid{grid-template-columns:1fr;gap:12px}.tool-card{padding:18px;gap:12px}.tool-arrow{display:none}.features{padding:60px 20px}.features-grid{gap:20px;grid-template-columns:1fr 1fr}.footer-tools-grid{grid-template-columns:1fr 1fr}.footer-brand-section{flex-direction:column;align-items:flex-start}.category-title{font-size:18px}.footer-legal-links{flex-direction:column;gap:10px}.floating-shapes{display:none}.scroll-indicator{display:none}.ai-chat{left:12px;right:12px;width:auto;bottom:96px}.ai-fab{left:16px;bottom:20px;width:54px;height:54px;font-size:11px}
-        }
-        @media(max-width:480px){.features-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:18px}.footer-tools-grid{grid-template-columns:1fr}}
+        *{font-family:'Inter',sans-serif}
+        body{background:#060818}
+        .galaxy-bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;
+            background:radial-gradient(1px 1px at 10% 20%,rgba(255,255,255,.8),transparent),
+            radial-gradient(1px 1px at 20% 50%,rgba(255,255,255,.6),transparent),
+            radial-gradient(1.5px 1.5px at 30% 10%,rgba(255,255,255,.9),transparent),
+            radial-gradient(1px 1px at 40% 70%,rgba(255,255,255,.5),transparent),
+            radial-gradient(1px 1px at 50% 30%,rgba(255,255,255,.7),transparent),
+            radial-gradient(1.5px 1.5px at 60% 80%,rgba(255,255,255,.8),transparent),
+            radial-gradient(1px 1px at 70% 40%,rgba(255,255,255,.6),transparent),
+            radial-gradient(1px 1px at 80% 15%,rgba(255,255,255,.9),transparent),
+            radial-gradient(1px 1px at 90% 60%,rgba(255,255,255,.5),transparent),
+            radial-gradient(1.5px 1.5px at 15% 85%,rgba(255,255,255,.7),transparent),
+            radial-gradient(1px 1px at 25% 35%,rgba(255,255,255,.6),transparent),
+            radial-gradient(1px 1px at 55% 55%,rgba(255,255,255,.8),transparent),
+            radial-gradient(1px 1px at 75% 75%,rgba(255,255,255,.5),transparent),
+            radial-gradient(1px 1px at 85% 25%,rgba(255,255,255,.7),transparent),
+            radial-gradient(1px 1px at 45% 90%,rgba(255,255,255,.6),transparent),
+            radial-gradient(1px 1px at 5% 55%,rgba(255,255,255,.4),transparent),
+            radial-gradient(1px 1px at 35% 45%,rgba(255,255,255,.5),transparent),
+            radial-gradient(1px 1px at 65% 65%,rgba(255,255,255,.6),transparent),
+            radial-gradient(1px 1px at 95% 45%,rgba(255,255,255,.7),transparent);
+            animation:twinkle 8s ease-in-out infinite alternate}
+        @keyframes twinkle{0%{opacity:.6}100%{opacity:1}}
+        .nebula-glow-1{position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,.15) 0%,transparent 70%);filter:blur(80px);pointer-events:none}
+        .nebula-glow-2{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.12) 0%,transparent 70%);filter:blur(60px);pointer-events:none}
+        .nebula-glow-3{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(192,132,252,.1) 0%,transparent 70%);filter:blur(50px);pointer-events:none}
+        .glass-card{background:rgba(15,17,41,.6);backdrop-filter:blur(16px);border:1px solid rgba(139,92,246,.12);transition:all .3s ease}
+        .glass-card:hover{background:rgba(30,33,72,.7);border-color:rgba(139,92,246,.3);transform:translateY(-2px);box-shadow:0 8px 32px rgba(99,102,241,.15)}
+        .cat-tab{transition:all .2s ease;border:1px solid transparent}
+        .cat-tab.active{background:linear-gradient(135deg,rgba(99,102,241,.2),rgba(139,92,246,.2));border-color:rgba(139,92,246,.4);color:#c084fc}
+        .cat-tab:not(.active):hover{background:rgba(30,33,72,.5);border-color:rgba(139,92,246,.15)}
+        .tool-card{background:rgba(15,17,41,.5);border:1px solid rgba(99,102,241,.08);transition:all .25s ease;opacity:0;animation:fadeInUp .3s ease forwards}
+        .tool-card:hover{background:rgba(30,33,72,.6);border-color:rgba(139,92,246,.25);transform:translateY(-1px);box-shadow:0 4px 20px rgba(99,102,241,.1)}
+        .tool-card:hover .tool-icon{background:linear-gradient(135deg,rgba(99,102,241,.3),rgba(139,92,246,.3))}
+        .agent-pulse{animation:agentPulse 3s ease-in-out infinite}
+        @keyframes agentPulse{0%,100%{box-shadow:0 0 20px rgba(99,102,241,.3),0 0 60px rgba(139,92,246,.1)}50%{box-shadow:0 0 30px rgba(99,102,241,.5),0 0 80px rgba(139,92,246,.2)}}
+        .orbit-ring{animation:orbitSpin 20s linear infinite}
+        @keyframes orbitSpin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+        .orbit-ring-reverse{animation:orbitSpinR 25s linear infinite}
+        @keyframes orbitSpinR{0%{transform:rotate(360deg)}100%{transform:rotate(0deg)}}
+        .float-anim{animation:floatUp 6s ease-in-out infinite}
+        @keyframes floatUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+        .chat-bubble-user{background:linear-gradient(135deg,#6366f1,#8b5cf6)}
+        .chat-bubble-ai{background:rgba(30,33,72,.8);border:1px solid rgba(139,92,246,.2)}
+        ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#060818}::-webkit-scrollbar-thumb{background:#2a2d5e;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:#4a4d80}
+        .search-input:focus{border-color:rgba(139,92,246,.5);box-shadow:0 0 0 3px rgba(139,92,246,.1)}
+        .gradient-text{background:linear-gradient(135deg,#c084fc,#818cf8,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .gradient-text-warm{background:linear-gradient(135deg,#f472b6,#c084fc,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+        .hero-overlay{background:linear-gradient(180deg,rgba(6,8,24,0) 0%,rgba(6,8,24,.3) 40%,rgba(6,8,24,.95) 100%)}
+        .nav-blur{background:rgba(6,8,24,.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(99,102,241,.08)}
+        .mobile-menu{background:rgba(6,8,24,.95);backdrop-filter:blur(20px)}
+        .typing-dot{animation:typingBounce 1.4s ease-in-out infinite}
+        .typing-dot:nth-child(2){animation-delay:.2s}.typing-dot:nth-child(3){animation-delay:.4s}
+        @keyframes typingBounce{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-6px);opacity:1}}
+        html{scroll-behavior:smooth}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+        .footer-gradient{background:linear-gradient(180deg,transparent,rgba(99,102,241,.03) 50%,rgba(139,92,246,.05))}
     </style>
 </head>
-<body>
+<body class="text-gray-300 font-inter antialiased overflow-x-hidden">
+    <div class="galaxy-bg" aria-hidden="true"></div>
 
-<div class="grid-bg"></div>
-<div class="floating-shapes">
-    <div class="shape"></div><div class="shape"></div><div class="shape"></div><div class="shape"></div>
-    <div class="shape"></div><div class="shape"></div><div class="shape"></div><div class="shape"></div>
-</div>
-<div class="particles" id="particles"></div>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"ToolGalaxy.online","url":"https://toolgalaxy.online/","description":"100+ free online tools including PDF tools, image tools, calculators, converters, SEO tools, and developer tools.","potentialAction":{"@type":"SearchAction","target":"https://toolgalaxy.online/search?q={search_term_string}","query-input":"required name=search_term_string"}}
-</script>
-
-<header class="header" id="header" role="banner">
-    <div class="header-inner">
-        <a href="/" class="logo" aria-label="ToolGalaxy.online Home">
-            <img src="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e" alt="ToolGalaxy.online" class="logo-img" width="52" height="52">
-            <div class="logo-text-wrap">
-                <div class="logo-name">ToolGalaxy<span>.online</span></div>
-                <div class="logo-tagline">100+ Free Online Tools</div>
-            </div>
-        </a>
-        <nav class="nav" role="navigation" aria-label="Main Navigation">
-            <a href="/" class="active">Home</a>
-            <a href="#tools">Tools</a>
-            <a href="/blog">Blog</a>
-            <a href="javascript:void(0)" class="nav-ai" onclick="toggleAI()">✨ AI Agent</a>
-        </nav>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
-            <span class="iconify" data-icon="lucide:menu" data-width="24" id="menuIcon"></span>
-        </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile Navigation">
-        <a href="/">Home</a>
-        <a href="#tools" onclick="closeMobile()">Tools</a>
-        <a href="/blog">Blog</a>
-        <a href="javascript:void(0)" onclick="closeMobile();toggleAI()">✨ AI Agent</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-        <a href="contact.html">Contact</a>
-        <a href="about-us.html">About Us</a>
-    </div>
-</header>
-
-<section class="hero scene-3d">
-    <div class="hero-glow"></div>
-    <div class="hero-glow-2"></div>
-    <div class="hero-content fade-up">
-        <div class="hero-logo-wrap">
-            <img src="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e" alt="ToolGalaxy.online" class="hero-logo-img" width="90" height="90">
-            <div class="hero-logo-name">ToolGalaxy<span>.online</span></div>
-        </div>
-        <div class="hero-badge">⚡ 100+ Free Online Tools</div>
-        <h1>Your Daily <span class="gradient-text">Online Tools</span> — Fast, Free & Private</h1>
-        <p>Convert, calculate, generate, and optimize — all in your browser. No signup, no uploads to servers, no limits.</p>
-    </div>
-    <div class="search-box fade-up" style="transition-delay:0.15s">
-        <span class="search-icon iconify" data-icon="lucide:search" data-width="18"></span>
-        <input type="text" id="toolSearch" placeholder="Search tools... (e.g., PDF, image, calculator)" aria-label="Search tools">
-    </div>
-    <div class="hero-stats fade-up" style="transition-delay:0.3s">
-        <div class="hero-stat"><div class="hero-stat-num" id="toolCount">100+</div><div class="hero-stat-label">Online Tools</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">15+</div><div class="hero-stat-label">Categories</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">0</div><div class="hero-stat-label">Signups Required</div></div>
-        <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Free Forever</div></div>
-    </div>
-    <div class="scroll-indicator"><span>Scroll</span><span class="iconify" data-icon="lucide:chevrons-down" data-width="18"></span></div>
-</section>
-
-<section class="tools-section scene-3d" id="tools">
-    <div class="section-header fade-up"><h2>All Tools</h2><p>Browse our complete collection of free online tools organized by category</p></div>
-    <div id="toolsContainer"></div>
-    <div class="no-results" id="noResults"><span class="iconify" data-icon="lucide:search-x" data-width="48"></span><h3>No tools found</h3><p>Try a different search term or browse the categories below</p></div>
-</section>
-
-<section class="features scene-3d">
-    <div class="features-grid">
-        <div class="feature fade-up"><div class="feature-icon"><span class="iconify" data-icon="lucide:shield-check" data-width="26"></span></div><h3>100% Private</h3><p>Your files never leave your browser. All processing happens locally on your device.</p></div>
-        <div class="feature fade-up" style="transition-delay:0.1s"><div class="feature-icon"><span class="iconify" data-icon="lucide:rocket" data-width="26"></span></div><h3>Lightning Fast</h3><p>No server round-trips. Instant results with client-side processing technology.</p></div>
-        <div class="feature fade-up" style="transition-delay:0.2s"><div class="feature-icon"><span class="iconify" data-icon="lucide:infinity" data-width="26"></span></div><h3>No Limits</h3><p>Use any tool as many times as you want. No daily limits, no file size caps.</p></div>
-        <div class="feature fade-up" style="transition-delay:0.3s"><div class="feature-icon"><span class="iconify" data-icon="lucide:smartphone" data-width="26"></span></div><h3>Works Everywhere</h3><p>Fully responsive design. Use on desktop, tablet, or mobile — any modern browser.</p></div>
-    </div>
-</section>
-
-<footer class="footer" role="contentinfo">
-    <div class="footer-inner">
-        <div class="footer-brand-section">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e" alt="ToolGalaxy.online" class="footer-logo-img" width="40" height="40">
-                    <div class="footer-logo-text">ToolGalaxy.online</div>
+    <!-- Navigation -->
+    <nav class="nav-blur fixed top-0 left-0 right-0 z-50 h-16" role="navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2.5 group">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-nebula-blue via-nebula-purple to-nebula-pink flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
                 </div>
-                <p>100+ free online tools for everyday tasks. No signup, no server uploads — everything runs in your browser for maximum privacy and speed.</p>
+                <span class="text-lg font-semibold text-white tracking-tight">Tool<span class="gradient-text">Galaxy</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-1">
+                <a href="#home" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Home</a>
+                <a href="#tools" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Tools</a>
+                <a href="#ai-agent" class="px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all flex items-center gap-1.5">AI Agent <span class="px-1.5 py-0.5 text-[10px] font-semibold bg-gradient-to-r from-nebula-blue to-nebula-purple rounded-full text-white">NEW</span></a>
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+                <a href="#tools" class="px-5 py-2 text-sm font-medium bg-gradient-to-r from-nebula-blue to-nebula-purple text-white rounded-xl hover:shadow-lg hover:shadow-indigo-500/25 transition-all hover:scale-105">Explore Tools</a>
+            </div>
+            <button id="mobileToggle" class="md:hidden p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/5" aria-label="Toggle menu">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu hidden md:hidden absolute top-16 left-0 right-0 border-t border-indigo-500/10 py-4 px-4">
+            <a href="#home" class="block px-4 py-3 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5">Home</a>
+            <a href="#tools" class="block px-4 py-3 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5">Tools</a>
+            <a href="#ai-agent" class="block px-4 py-3 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5">AI Agent</a>
+            <a href="#tools" class="block mt-3 px-4 py-3 text-sm font-medium bg-gradient-to-r from-nebula-blue to-nebula-purple text-white rounded-xl text-center">Explore Tools</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+            <div class="nebula-glow-1 -top-40 -left-40" aria-hidden="true"></div>
+            <div class="nebula-glow-2 top-20 -right-40" aria-hidden="true"></div>
+            <div class="nebula-glow-3 bottom-0 left-1/3" aria-hidden="true"></div>
+            <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    <span class="text-xs font-medium text-indigo-300">300+ AI Tools — 100% Free</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-semibold text-white leading-[1.1] tracking-tight mb-6">
+                    Your Universe of <span class="gradient-text block sm:inline"> AI Tools</span><br class="hidden sm:block"> Starts Here
+                </h1>
+                <p class="text-base sm:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Writing, marketing, business, social media, career, and prompts — 300+ powerful AI tools in one galaxy. Meet <strong class="text-indigo-300">ToolGalaxy AI Agent</strong>, your intelligent assistant.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                    <a href="#tools" class="w-full sm:w-auto px-8 py-3.5 text-sm font-medium bg-gradient-to-r from-nebula-blue to-nebula-purple text-white rounded-xl hover:shadow-xl hover:shadow-indigo-500/25 transition-all hover:scale-105 flex items-center justify-center gap-2">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> Explore All Tools
+                    </a>
+                    <a href="#ai-agent" class="w-full sm:w-auto px-8 py-3.5 text-sm font-medium bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 hover:border-indigo-500/30 transition-all flex items-center justify-center gap-2">
+                        <i data-lucide="bot" class="w-4 h-4"></i> Try AI Agent
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                    <div class="glass-card rounded-2xl p-4 text-center"><div class="text-2xl sm:text-3xl font-semibold text-white">300+</div><div class="text-xs text-gray-400 mt-1">AI Tools</div></div>
+                    <div class="glass-card rounded-2xl p-4 text-center"><div class="text-2xl sm:text-3xl font-semibold text-white">6</div><div class="text-xs text-gray-400 mt-1">Categories</div></div>
+                    <div class="glass-card rounded-2xl p-4 text-center"><div class="text-2xl sm:text-3xl font-semibold text-white">Free</div><div class="text-xs text-gray-400 mt-1">Forever</div></div>
+                    <div class="glass-card rounded-2xl p-4 text-center"><div class="text-2xl sm:text-3xl font-semibold text-white">AI</div><div class="text-xs text-gray-400 mt-1">Agent Powered</div></div>
+                </div>
+            </div>
+            <div class="hero-overlay absolute inset-0 pointer-events-none"></div>
+        </section>
+
+        <!-- AI Agent -->
+        <section id="ai-agent" class="relative py-24 sm:py-32">
+            <div class="nebula-glow-2 top-0 right-0" aria-hidden="true"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
+                        <i data-lucide="bot" class="w-3.5 h-3.5 text-purple-400"></i>
+                        <span class="text-xs font-medium text-purple-300">Featured</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white tracking-tight mb-4">Meet <span class="gradient-text-warm">ToolGalaxy AI Agent</span></h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg">Your intelligent AI companion that understands your needs and recommends the perfect tool.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+                    <div class="relative flex items-center justify-center py-8 lg:py-0">
+                        <div class="relative">
+                            <div class="orbit-ring absolute -inset-20 rounded-full border border-indigo-500/10"></div>
+                            <div class="orbit-ring-reverse absolute -inset-32 rounded-full border border-purple-500/8"></div>
+                            <div class="orbit-ring absolute -inset-44 rounded-full border border-cyan-500/5"></div>
+                            <div class="agent-pulse w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-br from-galaxy-600 via-galaxy-500 to-galaxy-400 border border-indigo-500/30 flex items-center justify-center float-anim">
+                                <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-indigo-600 via-purple-600 to-violet-700 flex items-center justify-center shadow-2xl">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 glass-card rounded-xl px-3 py-2 flex items-center gap-2 float-anim" style="animation-delay:-2s"><i data-lucide="pen-tool" class="w-3.5 h-3.5 text-blue-400"></i><span class="text-xs font-medium text-white">Writing</span></div>
+                            <div class="absolute -bottom-4 -left-4 glass-card rounded-xl px-3 py-2 flex items-center gap-2 float-anim" style="animation-delay:-4s"><i data-lucide="megaphone" class="w-3.5 h-3.5 text-pink-400"></i><span class="text-xs font-medium text-white">Marketing</span></div>
+                            <div class="absolute top-1/2 -right-16 glass-card rounded-xl px-3 py-2 flex items-center gap-2 float-anim" style="animation-delay:-1s"><i data-lucide="briefcase" class="w-3.5 h-3.5 text-amber-400"></i><span class="text-xs font-medium text-white">Business</span></div>
+                            <div class="absolute top-1/2 -left-16 glass-card rounded-xl px-3 py-2 flex items-center gap-2 float-anim" style="animation-delay:-3s"><i data-lucide="share-2" class="w-3.5 h-3.5 text-cyan-400"></i><span class="text-xs font-medium text-white">Social</span></div>
+                        </div>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 max-w-md mx-auto lg:mx-0 lg:ml-auto w-full">
+                        <div class="flex items-center gap-3 mb-5 pb-4 border-b border-white/5">
+                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center"><i data-lucide="bot" class="w-4 h-4 text-white"></i></div>
+                            <div><div class="text-sm font-medium text-white">ToolGalaxy AI Agent</div><div class="text-xs text-green-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-green-400"></span> Online</div></div>
+                        </div>
+                        <div class="space-y-4 mb-5">
+                            <div class="flex gap-3"><div class="w-6 h-6 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex-shrink-0 flex items-center justify-center mt-0.5"><i data-lucide="bot" class="w-3 h-3 text-white"></i></div><div class="chat-bubble-ai rounded-2xl rounded-tl-md px-4 py-2.5 max-w-[85%]"><p class="text-sm text-gray-200">Hi! I'm your ToolGalaxy AI Agent. What would you like to create today?</p></div></div>
+                            <div class="flex justify-end"><div class="chat-bubble-user rounded-2xl rounded-tr-md px-4 py-2.5 max-w-[85%]"><p class="text-sm text-white">I need a blog post about AI tools for small business</p></div></div>
+                            <div class="flex gap-3"><div class="w-6 h-6 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex-shrink-0 flex items-center justify-center mt-0.5"><i data-lucide="bot" class="w-3 h-3 text-white"></i></div><div class="chat-bubble-ai rounded-2xl rounded-tl-md px-4 py-2.5 max-w-[85%]"><p class="text-sm text-gray-200">Great choice! I recommend <strong class="text-indigo-300">AI Blog Writer</strong> + <strong class="text-indigo-300">AI SEO Article Writer</strong>. Want me to generate it now?</p></div></div>
+                            <div class="flex justify-end"><div class="chat-bubble-user rounded-2xl rounded-tr-md px-4 py-2.5 max-w-[85%]"><p class="text-sm text-white">Yes, please! 🚀</p></div></div>
+                            <div class="flex gap-3"><div class="w-6 h-6 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex-shrink-0 flex items-center justify-center mt-0.5"><i data-lucide="bot" class="w-3 h-3 text-white"></i></div><div class="chat-bubble-ai rounded-2xl rounded-tl-md px-4 py-3 max-w-[85%]"><div class="flex gap-1.5 mb-2"><div class="typing-dot w-2 h-2 rounded-full bg-indigo-400"></div><div class="typing-dot w-2 h-2 rounded-full bg-purple-400"></div><div class="typing-dot w-2 h-2 rounded-full bg-pink-400"></div></div><p class="text-sm text-gray-200">Generating your SEO-optimized blog post...</p></div></div>
+                        </div>
+                        <a href="#tools" class="block w-full py-2.5 text-center text-sm font-medium bg-gradient-to-r from-nebula-blue to-nebula-purple text-white rounded-xl hover:shadow-lg hover:shadow-indigo-500/25 transition-all">Start Chatting with AI Agent</a>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mt-16">
+                    <div class="glass-card rounded-2xl p-5 text-center"><div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center mx-auto mb-3"><i data-lucide="brain" class="w-5 h-5 text-blue-400"></i></div><h3 class="text-sm font-medium text-white mb-1">Smart Understanding</h3><p class="text-xs text-gray-400">Understands context and intent</p></div>
+                    <div class="glass-card rounded-2xl p-5 text-center"><div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center mx-auto mb-3"><i data-lucide="zap" class="w-5 h-5 text-purple-400"></i></div><h3 class="text-sm font-medium text-white mb-1">Instant Results</h3><p class="text-xs text-gray-400">Generates content in seconds</p></div>
+                    <div class="glass-card rounded-2xl p-5 text-center"><div class="w-10 h-10 rounded-xl bg-pink-500/10 flex items-center justify-center mx-auto mb-3"><i data-lucide="layers" class="w-5 h-5 text-pink-400"></i></div><h3 class="text-sm font-medium text-white mb-1">Multi-Tool Chain</h3><p class="text-xs text-gray-400">Combines multiple tools</p></div>
+                    <div class="glass-card rounded-2xl p-5 text-center"><div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center mx-auto mb-3"><i data-lucide="shield-check" class="w-5 h-5 text-cyan-400"></i></div><h3 class="text-sm font-medium text-white mb-1">Privacy First</h3><p class="text-xs text-gray-400">Your data is never stored</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="tools" class="relative py-24 sm:py-32">
+            <div class="nebula-glow-1 top-40 -left-60" aria-hidden="true"></div>
+            <div class="nebula-glow-3 bottom-20 -right-40" aria-hidden="true"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white tracking-tight mb-4">Explore <span class="gradient-text">300+ AI Tools</span></h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg mb-8">From writing to marketing, business to social media — find the perfect AI tool.</p>
+                    <div class="max-w-xl mx-auto relative mb-10">
+                        <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500"></i>
+                        <input type="text" id="toolSearch" placeholder="Search 300+ AI tools..." class="search-input w-full pl-11 pr-4 py-3.5 bg-galaxy-700/60 border border-white/10 rounded-2xl text-sm text-white placeholder-gray-500 outline-none transition-all" aria-label="Search tools">
+                        <div id="searchCount" class="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-gray-500 hidden"></div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center gap-2 mb-10" role="tablist">
+                    <button class="cat-tab active px-4 py-2.5 rounded-xl text-sm font-medium text-gray-300" data-cat="all" role="tab"><span class="flex items-center gap-2"><i data-lucide="grid-3x3" class="w-4 h-4"></i> All Tools</span></button>
+                    <button class="cat-tab px-4 py-2.5 rounded-xl text-sm font-medium text-gray-400" data-cat="writing" role="tab"><span class="flex items-center gap-2"><i data-lucide="pen-tool" class="w-4 h-4"></i> Writing</span></button>
+                    <button class="cat-tab px-4 py-2.5 rounded-xl text-sm font-medium text-gray-400" data-cat="marketing" role="tab"><span class="flex items-center gap-2"><i data-lucide="megaphone" class="w-4 h-4"></i> Marketing</span></button>
+                    <button class="cat-tab px-4 py-2.5 rounded-xl text-sm font-medium text-gray-400" data-cat="business" role="tab"><span class="flex items-center gap-2"><i data-lucide="briefcase" class="w-4 h-4"></i> Business</span></button>
+                    <button class="cat-tab px-4 py-2.5 rounded-xl text-sm font-medium text-gray-400" data-cat="social" role="tab"><span class="flex items-center gap-2"><i data-lucide="share-2" class="w-4 h-4"></i> Social Media</span></button>
+                    <button class="cat-tab px-4 py-2.5 rounded-xl text-sm font-medium text-gray-400" data-cat="career" role="tab"><span class="flex items-center gap-2"><i data-lucide="user-check" class="w-4 h-4"></i> Career</span></button>
+                    <button class="cat-tab px-4 py-2.5 rounded-xl text-sm font-medium text-gray-400" data-cat="prompts" role="tab"><span class="flex items-center gap-2"><i data-lucide="message-square" class="w-4 h-4"></i> Prompts</span></button>
+                </div>
+                <div id="catInfo" class="text-center mb-8">
+                    <h3 class="text-lg font-medium text-white" id="catTitle">All 300+ AI Tools</h3>
+                    <p class="text-sm text-gray-400 mt-1" id="catDesc">Browse the complete collection of free AI-powered tools</p>
+                </div>
+                <div id="toolsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3"></div>
+                <div id="noResults" class="hidden text-center py-16">
+                    <i data-lucide="search-x" class="w-12 h-12 text-gray-600 mx-auto mb-4"></i>
+                    <h3 class="text-lg font-medium text-gray-400">No tools found</h3>
+                    <p class="text-sm text-gray-500 mt-1">Try a different search term</p>
+                </div>
+                <div id="loadMoreWrap" class="text-center mt-10">
+                    <button id="loadMoreBtn" class="px-8 py-3 text-sm font-medium bg-white/5 border border-white/10 text-white rounded-xl hover:bg-white/10 hover:border-indigo-500/30 transition-all inline-flex items-center gap-2"><i data-lucide="chevron-down" class="w-4 h-4"></i> Load More Tools</button>
+                    <span id="shownCount" class="block mt-3 text-xs text-gray-500"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="relative py-24 sm:py-32">
+            <div class="nebula-glow-2 top-0 left-1/2 -translate-x-1/2" aria-hidden="true"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+                <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center mx-auto mb-6 shadow-xl shadow-indigo-500/20"><i data-lucide="rocket" class="w-8 h-8 text-white"></i></div>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white tracking-tight mb-4">Ready to Explore the Galaxy?</h2>
+                    <p class="text-gray-400 max-w-lg mx-auto mb-8">300+ free AI tools are waiting. No sign-up required. Start creating amazing content right now.</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <a href="#tools" class="w-full sm:w-auto px-8 py-3.5 text-sm font-medium bg-gradient-to-r from-nebula-blue to-nebula-purple text-white rounded-xl hover:shadow-xl hover:shadow-indigo-500/25 transition-all hover:scale-105 flex items-center justify-center gap-2"><i data-lucide="sparkles" class="w-4 h-4"></i> Start for Free</a>
+                        <a href="#ai-agent" class="w-full sm:w-auto px-8 py-3.5 text-sm font-medium text-gray-300 hover:text-white transition-all flex items-center justify-center gap-2">Learn about AI Agent <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-gradient relative border-t border-white/5 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-2 sm:col-span-4 lg:col-span-1 mb-4 lg:mb-0">
+                    <a href="/" class="flex items-center gap-2.5 mb-4">
+                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-nebula-blue via-nebula-purple to-nebula-pink flex items-center justify-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+                        <span class="text-base font-semibold text-white">Tool<span class="gradient-text">Galaxy</span></span>
+                    </a>
+                    <p class="text-sm text-gray-500 leading-relaxed max-w-xs">Your universe of 300+ free AI tools. Powered by ToolGalaxy AI Agent.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Categories</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Writing Tools</a></li>
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Marketing Tools</a></li>
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Business Tools</a></li>
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Social Media</a></li>
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Career Tools</a></li>
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Prompt Library</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Features</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#ai-agent" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">AI Agent</a></li>
+                        <li><a href="#tools" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">All Tools</a></li>
+                        <li><a href="#home" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">How It Works</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Legal</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="privacy-policy.html" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">Terms of Use</a></li>
+                        <li><a href="contact.html" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">Contact Us</a></li>
+                        <li><a href="about.html" class="text-sm text-gray-500 hover:text-indigo-300 transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="text-xs text-gray-600">&copy; 2025 ToolGalaxy. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="privacy-policy.html" class="text-xs text-gray-600 hover:text-gray-400">Privacy</a>
+                    <a href="terms-of-use.html" class="text-xs text-gray-600 hover:text-gray-400">Terms</a>
+                    <a href="contact.html" class="text-xs text-gray-600 hover:text-gray-400">Contact</a>
+                    <a href="about.html" class="text-xs text-gray-600 hover:text-gray-400">About</a>
+                </div>
             </div>
         </div>
-        <div class="footer-tools-section"><div class="footer-tools-grid" id="footerToolsGrid"></div></div>
-        <div class="footer-legal-links">
-            <a href="privacy-policy.html"><span class="iconify" data-icon="lucide:shield" data-width="15"></span> Privacy Policy</a>
-            <a href="terms-of-use.html"><span class="iconify" data-icon="lucide:file-text" data-width="15"></span> Terms of Use</a>
-            <a href="contact.html"><span class="iconify" data-icon="lucide:mail" data-width="15"></span> Contact</a>
-            <a href="about-us.html"><span class="iconify" data-icon="lucide:info" data-width="15"></span> About Us</a>
-        </div>
-        <div class="footer-bottom"><p>&copy; 2026 ToolGalaxy.online. All rights reserved.</p></div>
-    </div>
-</footer>
+    </footer>
 
-<button class="ai-fab" id="aiFab" onclick="toggleAI()" aria-label="Open AI Agent">AI</button>
-<div class="ai-chat" id="aiChat">
-    <div class="ai-chat-header">
-        <div class="ai-chat-avatar">AI</div>
-        <div class="ai-chat-header-info"><h4>ToolGalaxy AI Agent</h4><p>Ask me about any tool</p></div>
-        <div class="ai-chat-status"></div>
-    </div>
-    <div class="ai-chat-messages" id="aiMessages"></div>
-    <div class="ai-quick-actions" id="aiQuick">
-        <button class="ai-quick-btn" onclick="sendQuick('What tools do you have?')">All Tools</button>
-        <button class="ai-quick-btn" onclick="sendQuick('PDF tools')">PDF Tools</button>
-        <button class="ai-quick-btn" onclick="sendQuick('Image tools')">Image Tools</button>
-        <button class="ai-quick-btn" onclick="sendQuick('Calculators')">Calculators</button>
-        <button class="ai-quick-btn" onclick="sendQuick('SEO tools')">SEO Tools</button>
-    </div>
-    <div class="ai-chat-input">
-        <input type="text" id="aiInput" placeholder="Ask about any tool..." onkeydown="if(event.key==='Enter')sendAI()" autocomplete="off">
-        <button class="ai-chat-send" id="aiSend" onclick="sendAI()">Send</button>
-    </div>
-</div>
-<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑ Top</button>
-
-<script>
-const LOGO_URL="https://z-cdn-media.chatglm.cn/files/06e1d01f-6a35-4abc-aa20-3654f4186ef3.png?auth_key=1884877485-37f194cb38cf4063a4a71714865b284f-0-5e69e3c71bac5a7da5013df11da70e7e";
-
-/* ========== ALL TOOL DATA — every slug has .html ========== */
-const toolCategories=[
-    {name:"PDF Tools",color:"#dc2626",bg:"rgba(220,38,38,0.06)",icon:"lucide:file-text",tools:[
-        {name:"PDF Merger / Merge PDF",desc:"Combine multiple PDF files into one",slug:"pdf-merger.html",icon:"lucide:files"},
-        {name:"Compress PDF",desc:"Reduce PDF file size without quality loss",slug:"compress-pdf.html",icon:"lucide:file-down"},
-        {name:"PDF to Word Converter",desc:"Convert PDF documents to editable Word files",slug:"pdf-to-word.html",icon:"lucide:file-type"},
-        {name:"Word to PDF Converter",desc:"Convert Word documents to PDF format",slug:"word-to-pdf.html",icon:"lucide:file-text"},
-        {name:"JPG to PDF Converter",desc:"Convert JPG images to PDF documents",slug:"jpg-to-pdf.html",icon:"lucide:image"},
-        {name:"Split PDF",desc:"Split a PDF into separate pages or sections",slug:"split-pdf.html",icon:"lucide:scissors"},
-        {name:"PDF Password Remover",desc:"Remove password protection from PDF files",slug:"pdf-password-remover.html",icon:"lucide:unlock"},
-        {name:"PDF to JPG Converter",desc:"Convert PDF pages to JPG images",slug:"pdf-to-jpg.html",icon:"lucide:image"},
-        {name:"Image to PDF Converter",desc:"Convert images to PDF documents",slug:"image-to-pdf.html",icon:"lucide:file-image"}
-    ]},
-    {name:"Image Tools",color:"#d97706",bg:"rgba(217,119,6,0.06)",icon:"lucide:image",tools:[
-        {name:"Image Compressor / Compress Image",desc:"Compress images without losing quality",slug:"compress-image.html",icon:"lucide:image-minus"},
-        {name:"Background Remover (Image)",desc:"Remove image backgrounds instantly",slug:"background-remover.html",icon:"lucide:eraser"},
-        {name:"PNG to JPG Converter",desc:"Convert PNG images to JPG format",slug:"png-to-jpg.html",icon:"lucide:image"},
-        {name:"Image Resizer",desc:"Resize images to any dimension",slug:"image-resizer.html",icon:"lucide:crop"}
-    ]},
-    {name:"Text Tools",color:"#7c3aed",bg:"rgba(124,58,237,0.06)",icon:"lucide:type",tools:[
-        {name:"Word Counter",desc:"Count words, characters, sentences & paragraphs",slug:"word-counter.html",icon:"lucide:type"},
-        {name:"Case Converter (Upper/Lower)",desc:"Convert text to uppercase, lowercase & more",slug:"case-converter.html",icon:"lucide:case-sensitive"},
-        {name:"Text to Speech Converter",desc:"Convert text to spoken audio",slug:"text-to-speech.html",icon:"lucide:volume-2"},
-        {name:"Speech to Text Converter",desc:"Transcribe spoken words to text",slug:"speech-to-text.html",icon:"lucide:mic"},
-        {name:"Lorem Ipsum Generator",desc:"Generate placeholder text for designs",slug:"lorem-ipsum-generator.html",icon:"lucide:file-text"},
-        {name:"Text Diff Checker (Compare Text)",desc:"Compare two texts and find differences",slug:"text-diff-checker.html",icon:"lucide:diff"},
-        {name:"Word Frequency Counter",desc:"Count frequency of each word in text",slug:"word-frequency-counter.html",icon:"lucide:bar-chart-2"},
-        {name:"Character Counter",desc:"Count characters with and without spaces",slug:"character-counter.html",icon:"lucide:hash"},
-        {name:"Typing Speed Test",desc:"Test and improve your typing speed",slug:"typing-speed-test.html",icon:"lucide:keyboard"},
-        {name:"Roman Numeral Converter",desc:"Convert between Roman and Arabic numerals",slug:"roman-numeral-converter.html",icon:"lucide:hash"},
-        {name:"Number to Words Converter",desc:"Convert numbers to their word form",slug:"number-to-words.html",icon:"lucide:list-ordered"},
-        {name:"Morse Code Translator",desc:"Translate text to Morse code and back",slug:"morse-code-translator.html",icon:"lucide:radio"},
-        {name:"HTML to Markdown Converter",desc:"Convert HTML markup to Markdown",slug:"html-to-markdown.html",icon:"lucide:code"},
-        {name:"Markdown to HTML Converter",desc:"Convert Markdown to HTML markup",slug:"markdown-to-html.html",icon:"lucide:file-code"}
-    ]},
-    {name:"Calculators",color:"#059669",bg:"rgba(5,150,105,0.06)",icon:"lucide:calculator",tools:[
-        {name:"Age Calculator",desc:"Calculate exact age in years, months & days",slug:"age-calculator.html",icon:"lucide:cake"},
-        {name:"BMI Calculator",desc:"Calculate Body Mass Index instantly",slug:"bmi-calculator.html",icon:"lucide:heart-pulse"},
-        {name:"Percentage Calculator",desc:"Calculate percentages, increases & decreases",slug:"percentage-calculator.html",icon:"lucide:percent"},
-        {name:"Loan EMI Calculator",desc:"Calculate monthly loan EMI payments",slug:"loan-emi-calculator.html",icon:"lucide:banknote"},
-        {name:"GST Calculator (India-specific)",desc:"Calculate GST for Indian transactions",slug:"gst-calculator.html",icon:"lucide:receipt"},
-        {name:"Compound Interest Calculator",desc:"Calculate compound interest on savings",slug:"compound-interest-calculator.html",icon:"lucide:trending-up"},
-        {name:"Simple Interest Calculator",desc:"Calculate simple interest easily",slug:"simple-interest-calculator.html",icon:"lucide:percent"},
-        {name:"SIP Calculator",desc:"Calculate returns on SIP investments",slug:"sip-calculator.html",icon:"lucide:piggy-bank"},
-        {name:"FD Calculator",desc:"Calculate fixed deposit maturity amount",slug:"fd-calculator.html",icon:"lucide:landmark"},
-        {name:"HRA Calculator",desc:"Calculate HRA exemption for Indian income tax",slug:"hra-calculator.html",icon:"lucide:home"},
-        {name:"Discount Calculator",desc:"Calculate discount amounts and final prices",slug:"discount-calculator.html",icon:"lucide:tag"},
-        {name:"Tax Calculator",desc:"Calculate income tax liabilities",slug:"tax-calculator.html",icon:"lucide:receipt"},
-        {name:"Grade/GPA Calculator",desc:"Calculate your GPA or grade average",slug:"gpa-calculator.html",icon:"lucide:graduation-cap"},
-        {name:"Fuel Cost Calculator",desc:"Estimate fuel costs for trips",slug:"fuel-cost-calculator.html",icon:"lucide:fuel"},
-        {name:"Mortgage Calculator",desc:"Calculate monthly mortgage payments",slug:"mortgage-calculator.html",icon:"lucide:home"},
-        {name:"Retirement Calculator",desc:"Plan your retirement savings goals",slug:"retirement-calculator.html",icon:"lucide:umbrella"},
-        {name:"Tip Calculator",desc:"Calculate tips and split bills easily",slug:"tip-calculator.html",icon:"lucide:coins"},
-        {name:"Body Fat Calculator",desc:"Estimate your body fat percentage",slug:"body-fat-calculator.html",icon:"lucide:activity"},
-        {name:"Ideal Weight Calculator",desc:"Find your ideal weight based on height",slug:"ideal-weight-calculator.html",icon:"lucide:scale"},
-        {name:"Water Intake Calculator",desc:"Calculate daily water intake needs",slug:"water-intake-calculator.html",icon:"lucide:droplet"},
-        {name:"CGPA to Percentage Converter",desc:"Convert CGPA to percentage easily",slug:"cgpa-to-percentage.html",icon:"lucide:graduation-cap"}
-    ]},
-    {name:"Converter Tools",color:"#0891b2",bg:"rgba(8,145,178,0.06)",icon:"lucide:repeat",tools:[
-        {name:"Currency Converter",desc:"Convert between world currencies",slug:"currency-converter.html",icon:"lucide:banknote"},
-        {name:"Unit Converter",desc:"Convert between units of measurement",slug:"unit-converter.html",icon:"lucide:ruler"},
-        {name:"Video to MP3 Converter",desc:"Extract audio from video files",slug:"video-to-mp3.html",icon:"lucide:music"},
-        {name:"XML to JSON Converter",desc:"Convert XML data to JSON format",slug:"xml-to-json.html",icon:"lucide:braces"},
-        {name:"CSV to JSON Converter",desc:"Convert CSV data to JSON format",slug:"csv-to-json.html",icon:"lucide:table"},
-        {name:"Color Picker / HEX to RGB Converter",desc:"Pick colors and convert between formats",slug:"color-picker.html",icon:"lucide:palette"}
-    ]},
-    {name:"Developer Tools",color:"#4f46e5",bg:"rgba(79,70,229,0.06)",icon:"lucide:code-2",tools:[
-        {name:"JSON Formatter",desc:"Format and beautify JSON data",slug:"json-formatter.html",icon:"lucide:braces"},
-        {name:"Base64 Encode/Decode",desc:"Encode or decode Base64 strings",slug:"base64-encode-decode.html",icon:"lucide:binary"},
-        {name:"MD5 Hash Generator",desc:"Generate MD5 hash from text or files",slug:"md5-hash-generator.html",icon:"lucide:fingerprint"},
-        {name:"SHA256 Hash Generator",desc:"Generate SHA256 hash from any input",slug:"sha256-hash-generator.html",icon:"lucide:key-round"},
-        {name:"UUID Generator",desc:"Generate random UUID/GUID identifiers",slug:"uuid-generator.html",icon:"lucide:fingerprint"},
-        {name:"Regex Tester",desc:"Test and debug regular expressions",slug:"regex-tester.html",icon:"lucide:regex"},
-        {name:"HTML Minifier",desc:"Minify HTML code to reduce file size",slug:"html-minifier.html",icon:"lucide:code"},
-        {name:"CSS Minifier",desc:"Minify CSS code for faster loading",slug:"css-minifier.html",icon:"lucide:paintbrush"},
-        {name:"JavaScript Minifier",desc:"Minify JavaScript code efficiently",slug:"javascript-minifier.html",icon:"lucide:file-code"}
-    ]},
-    {name:"SEO Tools",color:"#ea580c",bg:"rgba(234,88,12,0.06)",icon:"lucide:search",tools:[
-        {name:"Meta Tag Generator",desc:"Generate SEO meta tags for web pages",slug:"meta-tag-generator.html",icon:"lucide:tags"},
-        {name:"Sitemap Generator",desc:"Generate XML sitemaps for websites",slug:"sitemap-generator.html",icon:"lucide:map"},
-        {name:"Robots.txt Generator",desc:"Create robots.txt files easily",slug:"robots-txt-generator.html",icon:"lucide:bot"},
-        {name:"Domain Age Checker",desc:"Check the age of any domain",slug:"domain-age-checker.html",icon:"lucide:clock"},
-        {name:"WHOIS Lookup",desc:"Lookup WHOIS information for domains",slug:"whois-lookup.html",icon:"lucide:search"},
-        {name:"DNS Lookup",desc:"Query DNS records for any domain",slug:"dns-lookup.html",icon:"lucide:server"},
-        {name:"IP Address Finder",desc:"Find your public IP address",slug:"ip-address-finder.html",icon:"lucide:network"},
-        {name:"Favicon Generator",desc:"Generate favicons from images",slug:"favicon-generator.html",icon:"lucide:image"}
-    ]},
-    {name:"Generator Tools",color:"#db2777",bg:"rgba(219,39,119,0.06)",icon:"lucide:wand-2",tools:[
-        {name:"Password Generator",desc:"Generate strong, secure passwords",slug:"password-generator.html",icon:"lucide:key-round"},
-        {name:"QR Code Generator",desc:"Create QR codes for any URL or text",slug:"qr-code-generator.html",icon:"lucide:qr-code"},
-        {name:"Invoice Generator",desc:"Create professional invoices online",slug:"invoice-generator.html",icon:"lucide:file-signature"},
-        {name:"Resume Builder",desc:"Build a professional resume for free",slug:"resume-builder.html",icon:"lucide:user"},
-        {name:"Barcode Generator",desc:"Generate barcodes in various formats",slug:"barcode-generator.html",icon:"lucide:scan-barcode"},
-        {name:"CSS Gradient Generator",desc:"Create beautiful CSS gradients visually",slug:"css-gradient-generator.html",icon:"lucide:palette"},
-        {name:"Box Shadow Generator",desc:"Design CSS box shadows with preview",slug:"box-shadow-generator.html",icon:"lucide:square"},
-        {name:"Random Number Generator",desc:"Generate random numbers in any range",slug:"random-number-generator.html",icon:"lucide:shuffle"},
-        {name:"Fibonacci Sequence Generator",desc:"Generate Fibonacci number sequences",slug:"fibonacci-generator.html",icon:"lucide:sigma"},
-        {name:"Dice Roller / Coin Flip Tool",desc:"Roll dice or flip a coin online",slug:"dice-roller-coin-flip.html",icon:"lucide:dices"}
-    ]},
-    {name:"Date & Time Tools",color:"#0d9488",bg:"rgba(13,148,136,0.06)",icon:"lucide:calendar",tools:[
-        {name:"Date Difference Calculator",desc:"Calculate the difference between two dates",slug:"date-difference-calculator.html",icon:"lucide:calendar-days"},
-        {name:"Time Zone Converter",desc:"Convert time between different time zones",slug:"time-zone-converter.html",icon:"lucide:globe"},
-        {name:"Unix Timestamp Converter",desc:"Convert Unix timestamps to dates and back",slug:"unix-timestamp-converter.html",icon:"lucide:clock"},
-        {name:"Countdown Timer",desc:"Create countdown timers for any event",slug:"countdown-timer.html",icon:"lucide:timer"},
-        {name:"Stopwatch",desc:"Online stopwatch with lap times",slug:"stopwatch.html",icon:"lucide:timer"},
-        {name:"Days Until Calculator",desc:"Find how many days until a specific date",slug:"days-until-calculator.html",icon:"lucide:calendar"},
-        {name:"Date Add/Subtract Calculator",desc:"Add or subtract days, months, years from a date",slug:"date-add-subtract.html",icon:"lucide:calendar-plus"},
-        {name:"Day of Week Finder",desc:"Find what day of the week a date falls on",slug:"day-of-week-finder.html",icon:"lucide:calendar-check"}
-    ]},
-    {name:"Math Tools",color:"#65a30d",bg:"rgba(101,163,13,0.06)",icon:"lucide:sigma",tools:[
-        {name:"Scientific Calculator",desc:"Full-featured scientific calculator online",slug:"scientific-calculator.html",icon:"lucide:calculator"},
-        {name:"GCD / LCM Calculator",desc:"Find Greatest Common Divisor and Least Common Multiple",slug:"gcd-lcm-calculator.html",icon:"lucide:divide"},
-        {name:"Square Root Calculator",desc:"Calculate square roots of any number",slug:"square-root-calculator.html",icon:"lucide:square"},
-        {name:"Fraction Calculator",desc:"Add, subtract, multiply & divide fractions",slug:"fraction-calculator.html",icon:"lucide:divide"},
-        {name:"Percentage of a Number",desc:"Find what percentage one number is of another",slug:"percentage-of-number.html",icon:"lucide:percent"},
-        {name:"Area Calculator",desc:"Calculate area of various shapes",slug:"area-calculator.html",icon:"lucide:square"},
-        {name:"Perimeter Calculator",desc:"Calculate perimeter of various shapes",slug:"perimeter-calculator.html",icon:"lucide:square-dashed"},
-        {name:"Volume Calculator",desc:"Calculate volume of 3D shapes",slug:"volume-calculator.html",icon:"lucide:box"}
-    ]},
-    {name:"Encoding & Decoding",color:"#a855f7",bg:"rgba(168,85,247,0.06)",icon:"lucide:binary",tools:[
-        {name:"URL Encoder / Decoder",desc:"Encode or decode URL components",slug:"url-encoder-decoder.html",icon:"lucide:link"},
-        {name:"HTML Entity Encoder / Decoder",desc:"Encode or decode HTML entities",slug:"html-entity-encoder.html",icon:"lucide:code"},
-        {name:"JWT Decoder",desc:"Decode and inspect JSON Web Tokens",slug:"jwt-decoder.html",icon:"lucide:key"},
-        {name:"Unicode Converter",desc:"Convert between Unicode and text",slug:"unicode-converter.html",icon:"lucide:languages"},
-        {name:"Hex to Decimal Converter",desc:"Convert between hexadecimal and decimal",slug:"hex-to-decimal.html",icon:"lucide:hash"},
-        {name:"Binary to Decimal Converter",desc:"Convert between binary and decimal",slug:"binary-to-decimal.html",icon:"lucide:binary"}
-    ]},
-    {name:"Network Tools",color:"#0284c7",bg:"rgba(2,132,199,0.06)",icon:"lucide:network",tools:[
-        {name:"HTTP Status Code Checker",desc:"Check HTTP status codes and meanings",slug:"http-status-code-checker.html",icon:"lucide:globe"},
-        {name:"Speed Test",desc:"Test your internet connection speed",slug:"speed-test.html",icon:"lucide:zap"},
-        {name:"Ping Test",desc:"Test network latency to any host",slug:"ping-test.html",icon:"lucide:activity"},
-        {name:"Port Scanner",desc:"Scan open ports on a server",slug:"port-scanner.html",icon:"lucide:radio"},
-        {name:"Website Uptime Checker",desc:"Monitor if a website is up or down",slug:"website-uptime-checker.html",icon:"lucide:check-circle"}
-    ]},
-    {name:"Social Media Tools",color:"#e11d48",bg:"rgba(225,29,72,0.06)",icon:"lucide:share-2",tools:[
-        {name:"Character Counter for Social Media",desc:"Check character limits for Twitter, Instagram, etc.",slug:"social-media-character-counter.html",icon:"lucide:at-sign"},
-        {name:"Hashtag Generator",desc:"Generate trending hashtags for posts",slug:"hashtag-generator.html",icon:"lucide:hash"},
-        {name:"Open Graph Meta Generator",desc:"Generate Open Graph meta tags for social sharing",slug:"open-graph-meta-generator.html",icon:"lucide:share"},
-        {name:"Twitter Card Generator",desc:"Generate Twitter Card meta tags",slug:"twitter-card-generator.html",icon:"lucide:twitter"},
-        {name:"Link Shortener",desc:"Shorten long URLs for sharing",slug:"link-shortener.html",icon:"lucide:link"}
-    ]},
-    {name:"Miscellaneous Tools",color:"#78716c",bg:"rgba(120,113,108,0.06)",icon:"lucide:tool",tools:[
-        {name:"Pomodoro Timer",desc:"Focus timer using the Pomodoro technique",slug:"pomodoro-timer.html",icon:"lucide:timer"},
-        {name:"Notepad Online",desc:"Quick online notepad for notes",slug:"notepad-online.html",icon:"lucide:file-edit"},
-        {name:"Clipboard Manager",desc:"Manage and organize clipboard history",slug:"clipboard-manager.html",icon:"lucide:clipboard"},
-        {name:"Color Blindness Simulator",desc:"Simulate how colors look with color blindness",slug:"color-blindness-simulator.html",icon:"lucide:eye"},
-        {name:"Screen Resolution Tester",desc:"Test how your site looks at different resolutions",slug:"screen-resolution-tester.html",icon:"lucide:monitor"}
-    ]}
-];
-
-/* ========== COUNT TOTAL TOOLS ========== */
-let totalTools=0;
-toolCategories.forEach(c=>totalTools+=c.tools.length);
-document.getElementById('toolCount').textContent=totalTools+'+';
-
-/* ========== URL HELPER — strips .html so links show clean paths ========== */
-function cleanUrl(slug){
-    return '/'+slug.replace(/\.html$/i,'');
-}
-
-/* ========== RENDER TOOLS ========== */
-function renderTools(filter=''){
-    const container=document.getElementById('toolsContainer');
-    const noResults=document.getElementById('noResults');
-    let html='';
-    let matchCount=0;
-    const q=filter.toLowerCase().trim();
-
-    toolCategories.forEach(cat=>{
-        const filtered=cat.tools.filter(t=>{
-            if(!q)return true;
-            return t.name.toLowerCase().includes(q)||t.desc.toLowerCase().includes(q)||cat.name.toLowerCase().includes(q);
-        });
-        if(filtered.length===0)return;
-        matchCount+=filtered.length;
-        html+=`<div class="category-title" style="--cat-color:${cat.color}"><span class="category-dot" style="--cat-color:${cat.color};background:${cat.color};box-shadow:0 0 12px ${cat.color}"></span>${cat.name}<span class="category-count">${filtered.length} tool${filtered.length>1?'s':''}</span></div>`;
-        html+=`<div class="tools-grid">`;
-        filtered.forEach(t=>{
-            const url=cleanUrl(t.slug);
-            html+=`<div class="tool-card-3d"><a href="${url}" class="tool-card" style="--cat-color:${cat.color}" title="${t.name}"><div class="tool-icon" style="background:${cat.bg};color:${cat.color}"><span class="iconify" data-icon="${t.icon}" data-width="22"></span></div><div class="tool-info"><h3>${t.name}</h3><p>${t.desc}</p></div><span class="tool-arrow iconify" data-icon="lucide:arrow-right" data-width="16"></span><div class="card-depth"></div></a></div>`;
-        });
-        html+=`</div>`;
-    });
-
-    container.innerHTML=html;
-    if(matchCount===0){noResults.classList.add('show')}else{noResults.classList.remove('show')}
-
-    // Re-observe new cards for fade-in
-    if(window.IntersectionObserver){
-        container.querySelectorAll('.tool-card-3d').forEach((el,i)=>{
-            el.style.opacity='0';el.style.transform='translateY(20px)';
-            setTimeout(()=>{el.style.transition='opacity 0.5s ease,transform 0.5s ease';el.style.opacity='1';el.style.transform='translateY(0)'},i*40);
-        });
-    }
-}
-
-renderTools();
-
-/* ========== SEARCH ========== */
-document.getElementById('toolSearch').addEventListener('input',function(e){
-    renderTools(e.target.value);
-});
-
-/* ========== RENDER FOOTER TOOLS ========== */
-(function(){
-    const grid=document.getElementById('footerToolsGrid');
-    let html='';
-    toolCategories.forEach(cat=>{
-        html+=`<div class="footer-tool-group"><h5><span class="ft-dot" style="background:${cat.color};color:${cat.color}"></span>${cat.name}</h5><ul>`;
-        cat.tools.slice(0,5).forEach(t=>{
-            const url=cleanUrl(t.slug);
-            html+=`<li><a href="${url}">${t.name}<span class="ft-arrow iconify" data-icon="lucide:chevron-right" data-width="12"></span></a></li>`;
-        });
-        if(cat.tools.length>5){
-            html+=`<li><a href="#tools" style="color:rgba(255,255,255,0.2);font-style:italic">+ ${cat.tools.length-5} more...</a></li>`;
+    <script>
+    // ===== SAB TOOLS KA DATA =====
+    const categoryData = {
+        writing: {
+            name: "AI Writing Tools", desc: "50 powerful AI tools for all your writing needs", icon: "pen-tool", color: "blue",
+            tools: ["AI Article Writer","AI Blog Writer","AI Essay Writer","AI Paragraph Generator","AI Sentence Rewriter","AI Grammar Checker","AI Text Rewriter","AI Content Improver","AI Summarizer","AI Paraphrasing Tool","AI Email Writer","AI Email Reply Generator","AI Business Email Writer","AI Cover Letter Generator","AI Resume Summary Generator","AI Resume Bullet Generator","AI Personal Statement Generator","AI SOP Generator","AI Bio Generator","AI About Me Generator","AI Product Description Generator","AI Ad Copy Generator","AI Sales Copy Generator","AI Marketing Copy Generator","AI Landing Page Copy Generator","AI SEO Article Writer","AI Meta Title Generator","AI Meta Description Generator","AI Blog Title Generator","AI Blog Outline Generator","AI Keyword Content Generator","AI FAQ Generator","AI YouTube Script Generator","AI YouTube Description Generator","AI YouTube Title Generator","AI Instagram Caption Generator","AI Facebook Post Generator","AI LinkedIn Post Generator","AI X (Twitter) Post Generator","AI TikTok Caption Generator","AI Story Generator","AI Character Generator","AI Poem Generator","AI Speech Writer","AI Presentation Script Generator","AI Research Summary Generator","AI Technical Writer","AI Newsletter Generator","AI Press Release Generator","AI Universal Writing Assistant"]
+        },
+        marketing: {
+            name: "AI Marketing Tools", desc: "50 AI tools to supercharge your marketing strategy", icon: "megaphone", color: "pink",
+            tools: ["AI Marketing Strategy Generator","AI Marketing Plan Generator","AI Campaign Generator","AI Ad Copy Generator","AI Google Ads Copy Generator","AI Facebook Ads Generator","AI Instagram Ads Generator","AI LinkedIn Ads Generator","AI X (Twitter) Ads Generator","AI TikTok Ads Generator","AI YouTube Ads Script Generator","AI Sales Copy Generator","AI Landing Page Copy Generator","AI Product Description Generator","AI Product Title Generator","AI Product Features Generator","AI Product Benefits Generator","AI Call-to-Action Generator","AI Headline Generator","AI Slogan Generator","AI Brand Name Generator","AI Tagline Generator","AI Business Name Generator","AI Value Proposition Generator","AI Unique Selling Proposition Generator","AI Email Marketing Generator","AI Newsletter Generator","AI Promotional Email Generator","AI Welcome Email Generator","AI Abandoned Cart Email Generator","AI Customer Review Reply Generator","AI Testimonial Generator","AI Press Release Generator","AI Blog Marketing Generator","AI SEO Content Generator","AI Meta Title Generator","AI Meta Description Generator","AI Keyword Cluster Generator","AI Content Calendar Generator","AI Social Media Post Generator","AI Instagram Caption Generator","AI Facebook Post Generator","AI LinkedIn Post Generator","AI X (Twitter) Post Generator","AI Pinterest Description Generator","AI YouTube Description Generator","AI YouTube Title Generator","AI Influencer Outreach Generator","AI Competitor Analysis Generator","AI Marketing Ideas Generator"]
+        },
+        business: {
+            name: "AI Business Tools", desc: "50 AI tools for business planning, analysis & proposals", icon: "briefcase", color: "amber",
+            tools: ["AI Business Name Generator","AI Startup Idea Generator","AI Business Idea Generator","AI Business Plan Generator","AI Executive Summary Generator","AI Company Profile Generator","AI Mission Statement Generator","AI Vision Statement Generator","AI Core Values Generator","AI Business Model Canvas Generator","AI SWOT Analysis Generator","AI PESTLE Analysis Generator","AI Competitor Analysis Generator","AI Market Research Generator","AI Target Audience Generator","AI Customer Persona Generator","AI Value Proposition Generator","AI Unique Selling Proposition Generator","AI Elevator Pitch Generator","AI Investor Pitch Generator","AI Pitch Deck Outline Generator","AI Sales Pitch Generator","AI Sales Proposal Generator","AI Business Proposal Generator","AI Partnership Proposal Generator","AI Invoice Generator","AI Quote Generator","AI Estimate Generator","AI Purchase Order Generator","AI Meeting Agenda Generator","AI Meeting Minutes Generator","AI Project Plan Generator","AI Project Timeline Generator","AI OKR Generator","AI KPI Generator","AI Business Goal Generator","AI Risk Assessment Generator","AI Decision Matrix Generator","AI Pricing Strategy Generator","AI Break-even Analysis Generator","AI Revenue Forecast Generator","AI Cash Flow Forecast Generator","AI Budget Planner Generator","AI Investment Proposal Generator","AI Franchise Plan Generator","AI Client Onboarding Generator","AI Customer Feedback Analyzer","AI Business Email Generator","AI Business Report Generator","AI Business Consultant Assistant"]
+        },
+        social: {
+            name: "AI Social Media Tools", desc: "50 AI tools for Instagram, Facebook, Twitter, LinkedIn & more", icon: "share-2", color: "cyan",
+            tools: ["AI Instagram Caption Generator","AI Facebook Post Generator","AI LinkedIn Post Generator","AI X (Twitter) Post Generator","AI TikTok Caption Generator","AI Pinterest Pin Description Generator","AI YouTube Title Generator","AI YouTube Description Generator","AI YouTube Tag Generator","AI YouTube Script Generator","AI Instagram Hashtag Generator","AI TikTok Hashtag Generator","AI LinkedIn Hashtag Generator","AI Twitter Thread Generator","AI Instagram Story Idea Generator","AI Facebook Story Generator","AI Social Media Bio Generator","AI Social Media Profile Optimizer","AI Social Media Content Calendar","AI Social Media Post Scheduler","AI Instagram Reel Idea Generator","AI TikTok Video Idea Generator","AI YouTube Video Idea Generator","AI Social Media Contest Generator","AI Social Media Poll Generator","AI Social Media Quiz Generator","AI Instagram Carousel Generator","AI Facebook Group Post Generator","AI LinkedIn Article Generator","AI Reddit Post Generator","AI Pinterest Board Idea Generator","AI Snapchat Caption Generator","AI WhatsApp Status Generator","AI Social Media Comment Generator","AI Social Media Reply Generator","AI Social Media Engagement Booster","AI Viral Post Idea Generator","AI Social Media Trend Analyzer","AI Social Media Audit Generator","AI Social Media Report Generator","AI Influencer Bio Generator","AI Social Media Welcome Post Generator","AI Social Media Announcement Generator","AI Social Media Giveaway Generator","AI Social Media Thank You Post Generator","AI Social Media Milestone Post Generator","AI Social Media Quote Post Generator","AI Social Media Tips Post Generator","AI Social Media Question Generator","AI Universal Social Media Assistant"]
+        },
+        career: {
+            name: "AI Career Tools", desc: "50 AI tools for resumes, cover letters, interviews & more", icon: "user-check", color: "green",
+            tools: ["AI Resume Generator","AI Resume Summary Generator","AI Resume Bullet Generator","AI Cover Letter Generator","AI LinkedIn Summary Generator","AI LinkedIn Headline Generator","AI LinkedIn About Section Generator","AI Personal Statement Generator","AI SOP Generator","AI Letter of Recommendation Generator","AI Thank You Letter Generator","AI Follow-Up Email Generator","AI Interview Preparation Generator","AI Interview Questions Generator","AI Interview Answer Generator","AI Behavioral Interview Answers","AI Technical Interview Prep","AI Salary Negotiation Email","AI Job Application Email","AI Job Acceptance Letter","AI Job Rejection Letter","AI Resignation Letter Generator","AI Career Change Plan","AI Career Path Generator","AI Skills Assessment Generator","AI Skill Gap Analyzer","AI Professional Development Plan","AI Performance Review Generator","AI Self-Evaluation Generator","AI Promotion Request Letter","AI Reference List Generator","AI Career Objective Generator","AI Portfolio Description Generator","AI GitHub Profile Generator","AI Freelance Proposal Generator","AI Freelance Pitch Generator","AI Networking Email Generator","AI Informational Interview Request","AI Mentorship Request Email","AI Career Coach Assistant","AI Job Description Analyzer","AI Resume Tailor","AI Cover Letter Tailor","AI LinkedIn Endorsement Generator","AI LinkedIn Recommendation Generator","AI Professional Bio Generator","AI Executive Bio Generator","AI Career Transition Cover Letter","AI ATS Resume Optimizer","AI Job Search Strategy Generator","AI Universal Career Assistant"]
+        },
+        prompts: {
+            name: "AI Prompt Library", desc: "50 AI prompt generators for ChatGPT, Midjourney, DALL-E & more", icon: "message-square", color: "purple",
+            tools: ["AI ChatGPT Prompt Generator","AI Midjourney Prompt Generator","AI DALL-E Prompt Generator","AI Stable Diffusion Prompt Generator","AI Image Prompt Generator","AI Art Prompt Generator","AI Photography Prompt Generator","AI Logo Design Prompt Generator","AI Website Design Prompt Generator","AI UI/UX Design Prompt Generator","AI Coding Prompt Generator","AI Python Prompt Generator","AI JavaScript Prompt Generator","AI Marketing Prompt Generator","AI SEO Prompt Generator","AI Content Writing Prompt Generator","AI Copywriting Prompt Generator","AI Email Marketing Prompt Generator","AI Social Media Prompt Generator","AI Blog Writing Prompt Generator","AI Storytelling Prompt Generator","AI Creative Writing Prompt Generator","AI Business Prompt Generator","AI Startup Prompt Generator","AI Sales Prompt Generator","AI Customer Service Prompt Generator","AI HR Prompt Generator","AI Legal Prompt Generator","AI Finance Prompt Generator","AI Education Prompt Generator","AI Research Prompt Generator","AI Data Analysis Prompt Generator","AI Presentation Prompt Generator","AI Video Script Prompt Generator","AI Podcast Prompt Generator","AI YouTube Prompt Generator","AI Instagram Prompt Generator","AI LinkedIn Prompt Generator","AI Twitter Prompt Generator","AI Roleplay Prompt Generator","AI Character Prompt Generator","AI World-Building Prompt Generator","AI Game Design Prompt Generator","AI Music Prompt Generator","AI Fashion Prompt Generator","AI Food Recipe Prompt Generator","AI Travel Prompt Generator","AI Fitness Prompt Generator","AI Universal Prompt Optimizer"]
         }
-        html+=`</ul></div>`;
-    });
-    grid.innerHTML=html;
-})();
-
-/* ========== PARTICLES ========== */
-(function(){
-    const c=document.getElementById('particles');
-    for(let i=0;i<20;i++){
-        const p=document.createElement('div');p.className='particle';
-        const s=Math.random()*3+1;
-        p.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;background:rgba(59,130,246,${Math.random()*0.15+0.05});animation-duration:${Math.random()*20+15}s;animation-delay:${Math.random()*15}s`;
-        c.appendChild(p);
-    }
-})();
-
-/* ========== SCROLL EFFECTS ========== */
-const header=document.getElementById('header');
-const scrollTopBtn=document.getElementById('scrollTop');
-
-window.addEventListener('scroll',()=>{
-    if(window.scrollY>50)header.classList.add('scrolled');else header.classList.remove('scrolled');
-    if(window.scrollY>500)scrollTopBtn.classList.add('show');else scrollTopBtn.classList.remove('show');
-});
-scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-
-/* ========== FADE UP OBSERVER ========== */
-const fadeObserver=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');fadeObserver.unobserve(e.target)}});
-},{threshold:0.1});
-document.querySelectorAll('.fade-up').forEach(el=>fadeObserver.observe(el));
-
-/* ========== MOBILE MENU ========== */
-const mobileToggle=document.getElementById('mobileToggle');
-const mobileMenu=document.getElementById('mobileMenu');
-const menuIcon=document.getElementById('menuIcon');
-let menuOpen=false;
-mobileToggle.addEventListener('click',()=>{
-    menuOpen=!menuOpen;
-    mobileMenu.classList.toggle('open',menuOpen);
-    mobileToggle.setAttribute('aria-expanded',menuOpen);
-    menuIcon.setAttribute('data-icon',menuOpen?'lucide:x':'lucide:menu');
-});
-function closeMobile(){
-    menuOpen=false;mobileMenu.classList.remove('open');
-    mobileToggle.setAttribute('aria-expanded','false');
-    menuIcon.setAttribute('data-icon','lucide:menu');
-}
-
-/* ========== 3D TILT ON TOOL CARDS ========== */
-document.addEventListener('mousemove',function(e){
-    document.querySelectorAll('.tool-card-3d').forEach(card=>{
-        const rect=card.getBoundingClientRect();
-        const x=e.clientX-rect.left;const y=e.clientY-rect.top;
-        if(x>=0&&x<=rect.width&&y>=0&&y<=rect.height){
-            const rotateY=((x/rect.width)-0.5)*8;
-            const rotateX=((y/rect.height)-0.5)*-8;
-            const inner=card.querySelector('.tool-card');
-            if(inner)inner.style.transform=`translateZ(10px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        }else{
-            const inner=card.querySelector('.tool-card');
-            if(inner)inner.style.transform='translateZ(0) rotateX(0) rotateY(0)';
-        }
-    });
-});
-
-/* ========== AI CHAT ========== */
-let aiOpen=false;
-function toggleAI(){
-    aiOpen=!aiOpen;
-    document.getElementById('aiChat').classList.toggle('open',aiOpen);
-    document.getElementById('aiFab').classList.toggle('open',aiOpen);
-    if(aiOpen&&document.getElementById('aiMessages').children.length===0){
-        addMsg('bot','👋 Hi! I\'m the <strong>ToolGalaxy AI Agent</strong>. Ask me about any tool — I\'ll find it for you instantly!');
-    }
-    if(aiOpen)document.getElementById('aiInput').focus();
-}
-
-function addMsg(type,text){
-    const m=document.getElementById('aiMessages');
-    const d=document.createElement('div');d.className='msg '+type;d.innerHTML=text;
-    m.appendChild(d);m.scrollTop=m.scrollHeight;
-    return d;
-}
-
-function showTyping(){
-    const m=document.getElementById('aiMessages');
-    const d=document.createElement('div');d.className='msg-typing';d.id='typingIndicator';
-    d.innerHTML='<span></span><span></span><span></span>';
-    m.appendChild(d);m.scrollTop=m.scrollHeight;
-}
-function hideTyping(){const t=document.getElementById('typingIndicator');if(t)t.remove();}
-
-function sendQuick(text){document.getElementById('aiInput').value=text;sendAI();}
-
-function sendAI(){
-    const input=document.getElementById('aiInput');
-    const text=input.value.trim();
-    if(!text)return;
-    addMsg('user',text);
-    input.value='';
-    showTyping();
-
-    setTimeout(()=>{
-        hideTyping();
-        const response=generateAIResponse(text);
-        addMsg('bot',response);
-    },600+Math.random()*400);
-}
-
-function generateAIResponse(query){
-    const q=query.toLowerCase();
-    let results=[];
-
-    toolCategories.forEach(cat=>{
-        cat.tools.forEach(t=>{
-            if(t.name.toLowerCase().includes(q)||t.desc.toLowerCase().includes(q)||cat.name.toLowerCase().includes(q)){
-                results.push({tool:t,cat:cat});
-            }
-        });
-    });
-
-    // Keyword mapping for better matching
-    const keywordMap={
-        'pdf':['pdf'],'image':['image','jpg','png','photo','picture','compress image','background','resize'],
-        'text':['text','word','character','case','lorem','diff','frequency','typing','morse','roman','markdown','speech'],
-        'calculator':['calculator','calculate','bmi','age','emi','gst','interest','sip','fd','hra','discount','tax','gpa','fuel','mortgage','retirement','tip','body fat','ideal weight','water','cgpa','scientific','gcd','lcm','square root','fraction','area','perimeter','volume','percentage'],
-        'converter':['converter','convert','currency','unit','video','xml','csv','color','hex','rgb'],
-        'developer':['developer','json','base64','md5','sha','uuid','regex','minif','html','css','javascript','jwt','unicode','hex','binary','encode','decode'],
-        'seo':['seo','meta','sitemap','robots','domain','whois','dns','ip','favicon','http','open graph','twitter card'],
-        'generator':['generator','generate','password','qr','invoice','resume','barcode','gradient','shadow','random','fibonacci','dice','coin','hashtag'],
-        'date':['date','time','timezone','timestamp','countdown','stopwatch','days until','day of week'],
-        'social':['social','twitter','instagram','hashtag','shorten','link'],
-        'network':['network','speed','ping','port','uptime'],
-        'misc':['pomodoro','notepad','clipboard','color blindness','screen resolution']
     };
 
-    if(results.length===0){
-        for(const[key,keywords] of Object.entries(keywordMap)){
-            if(keywords.some(k=>q.includes(k))){
-                toolCategories.forEach(cat=>{
-                    cat.tools.forEach(t=>{
-                        if(!results.find(r=>r.tool.slug===t.slug)){
-                            if(t.name.toLowerCase().includes(key)||t.desc.toLowerCase().includes(key)||cat.name.toLowerCase().includes(key)){
-                                results.push({tool:t,cat:cat});
-                            }
-                        }
-                    });
-                });
-                if(results.length>0)break;
-            }
+    const colorMap = { blue:'blue', pink:'pink', amber:'amber', cyan:'cyan', green:'green', purple:'purple' };
+    const bgMap = { blue:'bg-blue-500/10', pink:'bg-pink-500/10', amber:'bg-amber-500/10', cyan:'bg-cyan-500/10', green:'bg-green-500/10', purple:'bg-purple-500/10' };
+    const textMap = { blue:'text-blue-400', pink:'text-pink-400', amber:'text-amber-400', cyan:'text-cyan-400', green:'text-green-400', purple:'text-purple-400' };
+
+    // Tool name ko URL-friendly slug me convert karo
+    function slugify(name) {
+        return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    }
+
+    // Sab tools ko ek flat array me lo
+    let allTools = [];
+    Object.entries(categoryData).forEach(([cat, data]) => {
+        data.tools.forEach((tool, i) => {
+            allTools.push({ name: tool, category: cat, color: data.color, icon: data.icon, slug: slugify(tool) });
+        });
+    });
+
+    let currentCat = 'all';
+    let searchQuery = '';
+    let showCount = 24;
+    const PER_PAGE = 24;
+
+    function getFilteredTools() {
+        let filtered = allTools;
+        if (currentCat !== 'all') filtered = filtered.filter(t => t.category === currentCat);
+        if (searchQuery) filtered = filtered.filter(t => t.name.toLowerCase().includes(searchQuery.toLowerCase()));
+        return filtered;
+    }
+
+    function renderTools() {
+        const grid = document.getElementById('toolsGrid');
+        const noResults = document.getElementById('noResults');
+        const loadWrap = document.getElementById('loadMoreWrap');
+        const shownEl = document.getElementById('shownCount');
+        const searchCountEl = document.getElementById('searchCount');
+
+        const filtered = getFilteredTools();
+        const toShow = filtered.slice(0, showCount);
+
+        if (filtered.length === 0) {
+            grid.innerHTML = '';
+            noResults.classList.remove('hidden');
+            loadWrap.classList.add('hidden');
+            searchCountEl.classList.add('hidden');
+            return;
+        }
+
+        noResults.classList.add('hidden');
+
+        if (searchQuery) {
+            searchCountEl.textContent = filtered.length + ' found';
+            searchCountEl.classList.remove('hidden');
+        } else {
+            searchCountEl.classList.add('hidden');
+        }
+
+        grid.innerHTML = toShow.map((tool, i) => `
+            <a href="tool.html?name=${encodeURIComponent(tool.name)}&cat=${tool.category}" class="tool-card rounded-xl p-4 flex items-start gap-3 cursor-pointer" style="animation-delay:${Math.min(i * 0.03, 0.5)}s">
+                <div class="tool-icon w-10 h-10 rounded-lg ${bgMap[tool.color]} flex items-center justify-center flex-shrink-0 transition-all">
+                    <i data-lucide="${tool.icon}" class="w-5 h-5 ${textMap[tool.color]}"></i>
+                </div>
+                <div class="min-w-0">
+                    <h4 class="text-sm font-medium text-white truncate">${tool.name}</h4>
+                    <p class="text-xs text-gray-500 capitalize mt-0.5">${tool.category}</p>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5"></i>
+            </a>
+        `).join('');
+
+        if (filtered.length > showCount) {
+            loadWrap.classList.remove('hidden');
+            shownEl.textContent = `Showing ${showCount} of ${filtered.length} tools`;
+        } else {
+            loadWrap.classList.add('hidden');
+        }
+
+        lucide.createIcons();
+    }
+
+    function updateCatInfo() {
+        const titleEl = document.getElementById('catTitle');
+        const descEl = document.getElementById('catDesc');
+        if (currentCat === 'all') {
+            titleEl.textContent = 'All 300+ AI Tools';
+            descEl.textContent = 'Browse the complete collection of free AI-powered tools';
+        } else {
+            const data = categoryData[currentCat];
+            titleEl.textContent = data.name;
+            descEl.textContent = data.desc;
         }
     }
 
-    if(results.length===0){
-        return `I couldn't find a specific tool for "<strong>${query}</strong>". But we have <strong>${totalTools}+ tools</strong> across 15+ categories! Try searching for: PDF, Image, Calculator, Converter, SEO, Generator, or Developer tools.`;
+    // Category tab click
+    document.querySelectorAll('.cat-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.cat-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            currentCat = tab.dataset.cat;
+            showCount = PER_PAGE;
+            updateCatInfo();
+            renderTools();
+        });
+    });
+
+    // Search
+    let searchTimeout;
+    document.getElementById('toolSearch').addEventListener('input', (e) => {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            searchQuery = e.target.value.trim();
+            showCount = PER_PAGE;
+            renderTools();
+        }, 200);
+    });
+
+    // Load More
+    document.getElementById('loadMoreBtn').addEventListener('click', () => {
+        showCount += PER_PAGE;
+        renderTools();
+    });
+
+    // Mobile menu
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('#mobileMenu a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.add('hidden');
+        });
+    });
+
+    // URL se search query handle karo
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlSearch = urlParams.get('q');
+    if (urlSearch) {
+        document.getElementById('toolSearch').value = urlSearch;
+        searchQuery = urlSearch;
     }
 
-    let reply='';
-    if(results.length<=3){
-        reply=`I found <strong>${results.length} tool${results.length>1?'s':''}</strong> for you:<br><br>`;
-        results.forEach(r=>{
-            const url=cleanUrl(r.tool.slug);
-            reply+=`• <a href="${url}" class="tool-link">${r.tool.name}</a> — ${r.tool.desc}<br>`;
-        });
-    }else{
-        // Group by category
-        const grouped={};
-        results.slice(0,12).forEach(r=>{
-            if(!grouped[r.cat.name])grouped[r.cat.name]={cat:r.cat,tools:[]};
-            grouped[r.cat.name].tools.push(r.tool);
-        });
-        reply=`I found <strong>${results.length} tools</strong> across multiple categories:<br><br>`;
-        for(const[name,g] of Object.entries(grouped)){
-            reply+=`<strong>${name}:</strong><br>`;
-            g.tools.forEach(t=>{
-                const url=cleanUrl(t.slug);
-                reply+=`• <a href="${url}" class="tool-link">${t.name}</a><br>`;
-            });
-            reply+=`<br>`;
-        }
-        if(results.length>12)reply+=`...and ${results.length-12} more. <a href="#tools" class="tool-link" onclick="document.getElementById('toolSearch').value='${query}';renderTools('${query}');">View all results</a>`;
-    }
-    return reply;
-}
-
-/* ========== KEYBOARD SHORTCUT ========== */
-document.addEventListener('keydown',function(e){
-    if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){
-        e.preventDefault();document.getElementById('toolSearch').focus();
-    }
-    if(e.key==='Escape'&&aiOpen)toggleAI();
-});
-</script>
+    // Initial render
+    updateCatInfo();
+    renderTools();
+    lucide.createIcons();
+    </script>
 </body>
 </html>
