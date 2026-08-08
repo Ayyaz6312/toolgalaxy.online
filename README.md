@@ -1,2 +1,2 @@
-# everydaytools.online
-everydaytools.online a best platforms 
+# toolgalaxy.online
+toolgalaxy.online a best platforms 
